@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Testimonials — JotechToTech</title>
+<meta name="description" content="Hear what our clients say about working with JotechToTech."/>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Inter','system-ui','sans-serif'],
+          display: ['"Plus Jakarta Sans"','Inter','sans-serif'],
+        },
+        colors: {
+          navy: {
+            50:'#eef4ff',100:'#dbe6ff',200:'#b6cdff',300:'#8aacff',
+            400:'#5e87f7',500:'#3a64e6',600:'#2547c4',700:'#1c3699',
+            800:'#142670',900:'#0b1840',950:'#070f29'
+          },
+        },
+        boxShadow: {
+          card: '0 10px 30px -12px rgba(11,24,64,0.18)',
+          glow: '0 20px 60px -20px rgba(28,54,153,0.45)',
+        },
+        backgroundImage: {
+          'hero-gradient':'linear-gradient(135deg,#0b1840 0%,#142670 45%,#1c3699 100%)',
+          'blue-fade':'linear-gradient(135deg,#1c3699 0%,#3a64e6 100%)',
+        }
+      }
+    }
+  }
+</script>
+<style>
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',sans-serif;color:#0b1840;background:#ffffff}
+  h1,h2,h3,h4{font-family:'Plus Jakarta Sans',sans-serif;letter-spacing:-0.02em}
+  .grid-bg{
+    background-image:
+      radial-gradient(circle at 20% 10%, rgba(58,100,230,.18), transparent 40%),
+      radial-gradient(circle at 80% 60%, rgba(94,135,247,.18), transparent 45%),
+      linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
+    background-size: auto, auto, 40px 40px, 40px 40px;
+  }
+  .fade-up{opacity:0;transform:translateY(20px);transition:all .8s ease}
+  .fade-up.in{opacity:1;transform:none}
+</style>
+</head>
+<body class="antialiased">
+
+
+<header class="fixed top-0 inset-x-0 z-50 backdrop-blur bg-white/85 border-b border-navy-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-2">
+      <div class="h-9 w-9 rounded-xl bg-blue-fade grid place-items-center shadow-glow">
+        <span class="text-white font-extrabold">J</span>
+      </div>
+      <span class="font-display font-extrabold text-navy-900 text-lg">Jotech<span class="text-navy-600">ToTech</span></span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-navy-800">
+      <a href="index.html" class="hover:text-navy-600">Home</a>
+<a href="about.html" class="hover:text-navy-600">About</a>
+<a href="services.html" class="hover:text-navy-600">Services</a>
+<a href="portfolio.html" class="hover:text-navy-600">Portfolio</a>
+<a href="packages.html" class="hover:text-navy-600">Packages</a>
+<a href="testimonials.html" class="text-navy-600 font-bold">Testimonials</a>
+<a href="contact.html" class="hover:text-navy-600">Contact</a>
+
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="contact.html" class="hidden sm:inline-flex items-center gap-2 bg-blue-fade text-white text-sm font-semibold px-4 py-2.5 rounded-xl shadow-glow hover:opacity-95">
+        Get Started
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+      </a>
+      <button id="menuBtn" class="lg:hidden p-2 rounded-lg border border-navy-200 text-navy-800">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <div id="mobileMenu" class="lg:hidden hidden border-t border-navy-100 bg-white">
+    <div class="px-4 py-3 grid gap-1 text-navy-800 font-medium">
+      <a href="index.html" class="py-2 hover:text-navy-600">Home</a>
+<a href="about.html" class="py-2 hover:text-navy-600">About</a>
+<a href="services.html" class="py-2 hover:text-navy-600">Services</a>
+<a href="portfolio.html" class="py-2 hover:text-navy-600">Portfolio</a>
+<a href="packages.html" class="py-2 hover:text-navy-600">Packages</a>
+<a href="testimonials.html" class="py-2 text-navy-600 font-bold">Testimonials</a>
+<a href="contact.html" class="py-2 hover:text-navy-600">Contact</a>
+
+    </div>
+  </div>
+</header>
+
+
+<section class="relative pt-32 pb-16 bg-hero-gradient text-white overflow-hidden">
+  <div class="absolute inset-0 grid-bg opacity-90"></div>
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <span class="inline-flex items-center gap-2 bg-white/10 border border-white/15 px-3 py-1.5 rounded-full text-xs font-semibold tracking-wide">
+      <span class="h-2 w-2 rounded-full bg-emerald-400"></span> Testimonials
+    </span>
+    <h1 class="mt-5 text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.05]">Loved by businesses we've <span class='bg-gradient-to-r from-blue-300 to-white bg-clip-text text-transparent'>partnered with</span></h1>
+    <p class="mt-5 text-base sm:text-lg text-blue-100/90 max-w-2xl mx-auto">Real words from real clients across churches, schools, real estate, retail and corporate brands.</p>
+  </div>
+</section>
+
+
+<section class="py-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    
+        <div class="fade-up bg-white rounded-2xl border border-navy-100 p-6 shadow-card">
+          <div class="flex gap-1 text-amber-400 mb-3">★★★★★</div>
+          <p class="text-navy-800/90 italic">"JotechToTech rebuilt our church website and it transformed our online community. Sermons, events and giving — all in one place."</p>
+          <div class="mt-5 flex items-center gap-3">
+            <div class="h-11 w-11 rounded-full bg-blue-fade text-white grid place-items-center font-bold">PM</div>
+            <div>
+              <div class="font-bold text-navy-900">Pastor Michael A.</div>
+              <div class="text-xs text-navy-700/70">Grace Chapel International</div>
+            </div>
+          </div>
+        </div>
+        <div class="fade-up bg-white rounded-2xl border border-navy-100 p-6 shadow-card">
+          <div class="flex gap-1 text-amber-400 mb-3">★★★★★</div>
+          <p class="text-navy-800/90 italic">"Parents now find admissions info easily. Our enrollment requests doubled in 3 months. Highly recommended."</p>
+          <div class="mt-5 flex items-center gap-3">
+            <div class="h-11 w-11 rounded-full bg-blue-fade text-white grid place-items-center font-bold">MA</div>
+            <div>
+              <div class="font-bold text-navy-900">Mrs. Adaeze O.</div>
+              <div class="text-xs text-navy-700/70">Greenfield Schools</div>
+            </div>
+          </div>
+        </div>
+        <div class="fade-up bg-white rounded-2xl border border-navy-100 p-6 shadow-card">
+          <div class="flex gap-1 text-amber-400 mb-3">★★★★★</div>
+          <p class="text-navy-800/90 italic">"The property search and lead form work flawlessly. We close deals straight from the website."</p>
+          <div class="mt-5 flex items-center gap-3">
+            <div class="h-11 w-11 rounded-full bg-blue-fade text-white grid place-items-center font-bold">ET</div>
+            <div>
+              <div class="font-bold text-navy-900">Engr. Tunde B.</div>
+              <div class="text-xs text-navy-700/70">Crestwood Realty</div>
+            </div>
+          </div>
+        </div>
+        <div class="fade-up bg-white rounded-2xl border border-navy-100 p-6 shadow-card">
+          <div class="flex gap-1 text-amber-400 mb-3">★★★★★</div>
+          <p class="text-navy-800/90 italic">"Our online store finally feels premium. Sales jumped within weeks of launch."</p>
+          <div class="mt-5 flex items-center gap-3">
+            <div class="h-11 w-11 rounded-full bg-blue-fade text-white grid place-items-center font-bold">SK</div>
+            <div>
+              <div class="font-bold text-navy-900">Sarah K.</div>
+              <div class="text-xs text-navy-700/70">Bloom Cosmetics</div>
+            </div>
+          </div>
+        </div>
+        <div class="fade-up bg-white rounded-2xl border border-navy-100 p-6 shadow-card">
+          <div class="flex gap-1 text-amber-400 mb-3">★★★★★</div>
+          <p class="text-navy-800/90 italic">"Clean, fast, professional. Exactly the corporate look we needed to win bigger clients."</p>
+          <div class="mt-5 flex items-center gap-3">
+            <div class="h-11 w-11 rounded-full bg-blue-fade text-white grid place-items-center font-bold">DI</div>
+            <div>
+              <div class="font-bold text-navy-900">David I.</div>
+              <div class="text-xs text-navy-700/70">Apex Consulting</div>
+            </div>
+          </div>
+        </div>
+        <div class="fade-up bg-white rounded-2xl border border-navy-100 p-6 shadow-card">
+          <div class="flex gap-1 text-amber-400 mb-3">★★★★★</div>
+          <p class="text-navy-800/90 italic">"I love how easy it is to update products. JotechToTech's team is super patient and supportive."</p>
+          <div class="mt-5 flex items-center gap-3">
+            <div class="h-11 w-11 rounded-full bg-blue-fade text-white grid place-items-center font-bold">JE</div>
+            <div>
+              <div class="font-bold text-navy-900">Joy E.</div>
+              <div class="text-xs text-navy-700/70">Bella Boutique</div>
+            </div>
+          </div>
+        </div>
+  </div>
+</section>
+
+<section class="py-20 bg-navy-50/40 border-y border-navy-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid sm:grid-cols-3 gap-6 text-center">
+    <div class="fade-up bg-white rounded-2xl p-8 border border-navy-100 shadow-card"><div class="text-4xl font-extrabold text-navy-900">120+</div><div class="mt-2 text-navy-700/85 font-semibold">Websites Launched</div></div><div class="fade-up bg-white rounded-2xl p-8 border border-navy-100 shadow-card"><div class="text-4xl font-extrabold text-navy-900">98%</div><div class="mt-2 text-navy-700/85 font-semibold">Client Satisfaction</div></div><div class="fade-up bg-white rounded-2xl p-8 border border-navy-100 shadow-card"><div class="text-4xl font-extrabold text-navy-900">7+</div><div class="mt-2 text-navy-700/85 font-semibold">Industries Served</div></div>
+  </div>
+</section>
+
+
+<!-- CTA Strip -->
+<section class="bg-blue-fade text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 grid md:grid-cols-2 gap-6 items-center">
+    <div>
+      <h3 class="text-2xl sm:text-3xl font-extrabold">Ready to grow your business online?</h3>
+      <p class="text-blue-100 mt-2">Let's build a website that actually works for your goals.</p>
+    </div>
+    <div class="md:text-right">
+      <a href="contact.html" class="inline-flex items-center gap-2 bg-white text-navy-800 font-semibold px-6 py-3 rounded-xl shadow-glow hover:bg-blue-50">
+        Start Your Project
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-navy-950 text-blue-100/80">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 grid md:grid-cols-4 gap-10">
+    <div>
+      <div class="flex items-center gap-2">
+        <div class="h-9 w-9 rounded-xl bg-blue-fade grid place-items-center"><span class="text-white font-extrabold">J</span></div>
+        <span class="font-display font-extrabold text-white text-lg">Jotech<span class="text-navy-300">ToTech</span></span>
+      </div>
+      <p class="mt-4 text-sm">Modern, responsive, SEO-ready websites for businesses, schools, churches, real estate & e-commerce.</p>
+    </div>
+    <div>
+      <h4 class="text-white font-semibold mb-3">Company</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="about.html" class="hover:text-white">About</a></li>
+        <li><a href="services.html" class="hover:text-white">Services</a></li>
+        <li><a href="portfolio.html" class="hover:text-white">Portfolio</a></li>
+        <li><a href="packages.html" class="hover:text-white">Packages</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-white font-semibold mb-3">Resources</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="testimonials.html" class="hover:text-white">Testimonials</a></li>
+        <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+        <li><a href="services.html" class="hover:text-white">SEO & Performance</a></li>
+        <li><a href="services.html" class="hover:text-white">Maintenance</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-white font-semibold mb-3">Get in Touch</h4>
+      <ul class="space-y-2 text-sm">
+        <li>Email: hello@jotechtotech.com</li>
+        <li>Phone: +234 800 000 0000</li>
+        <li>Mon - Sat, 9am - 6pm</li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 text-xs flex flex-col sm:flex-row gap-2 justify-between">
+      <span>© 2025 JotechToTech. All rights reserved.</span>
+      <span>Built with passion for businesses that want to grow.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const btn = document.getElementById('menuBtn');
+  const menu = document.getElementById('mobileMenu');
+  if(btn) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('in'); });
+  },{threshold:.12});
+  document.querySelectorAll('.fade-up').forEach(el=>io.observe(el));
+</script>
+</body></html>
+
