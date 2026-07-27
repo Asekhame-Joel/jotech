@@ -12,18 +12,142 @@
     content="Learn about JoTechToTech: mission, vision, and the team engineering high-converting websites for corporate, real estate, church, university, and e-commerce brands." />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Preconnect to Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Preload critical CSS -->
+  <link rel="preload" href="css/tailwind.css" as="style">
+  <link rel="preload" href="css/styles.css" as="style">
+
+  <!-- Load Google Fonts asynchronously (non-blocking) -->
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap"
+      rel="stylesheet">
+  </noscript>
+
+  <!-- Main CSS (local, built from Tailwind + custom styles) -->
   <link rel="stylesheet" href="css/tailwind.css">
   <link rel="stylesheet" href="css/styles.css">
-  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Inline critical styles to prevent FOUC -->
+  <style>
+    /* Minimal critical styles – ensures text and layout are visible immediately */
+    body {
+      background-color: #020203;
+      color: #d4d4d8;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      opacity: 1;
+    }
+
+    .logo-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 0.625rem;
+      text-decoration: none;
+    }
+
+    .logo-text-group {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+    }
+
+    .logo-main {
+      font-size: 1.25rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      font-style: italic;
+      color: #fff;
+    }
+
+    .logo-main .highlight {
+      color: #818cf8;
+    }
+
+    .brand-tagline {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.5625rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #a1a1aa;
+      font-family: 'JetBrains Mono', ui-monospace, monospace;
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.12), rgba(16, 185, 129, 0.08));
+      padding: 0.2rem 0.75rem 0.2rem 0.6rem;
+      border-radius: 100px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(4px);
+      transition: all 0.3s ease;
+      width: fit-content;
+    }
+
+    .brand-tagline .pulse-dot {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 9999px;
+      background: #10b981;
+      animation: pulse-glow 1.8s ease-in-out infinite;
+      flex-shrink: 0;
+      box-shadow: 0 0 8px rgba(16, 185, 129, 0.3);
+    }
+
+    @keyframes pulse-glow {
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 0.5;
+        transform: scale(0.75);
+      }
+    }
+
+    .brand-tagline .divider-line {
+      width: 12px;
+      height: 1px;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
+      flex-shrink: 0;
+    }
+
+    .brand-tagline .tagline-text {
+      background: linear-gradient(to right, #c7d2fe, #a5b4fc, #818cf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+    }
+
+    #site-header {
+      transition: background 0.3s, padding 0.3s;
+    }
+
+    .grid-bg-dark {
+      background-image:
+        radial-gradient(circle at 15% 15%, rgba(99, 102, 241, 0.15), transparent 45%),
+        radial-gradient(circle at 85% 75%, rgba(99, 102, 241, 0.1), transparent 50%),
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: auto, auto, 48px 48px, 48px 48px;
+    }
+  </style>
 </head>
 
 <body class="min-h-screen bg-[#020203] text-zinc-300 font-sans selection:bg-indigo-500 selection:text-white">
 
+  <!-- ========== CONTENT (unchanged) ========== -->
   <header id="site-header"
     class="fixed top-0 inset-x-0 z-50 transition-all duration-300 bg-transparent py-5 border-b border-white/5">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -266,7 +390,6 @@
     </div>
   </section>
 
-
   <footer class="bg-[#020203] text-zinc-400 border-t border-white/5">
     <div class="bg-white/[0.02] border-b border-white/5 py-10">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
@@ -342,7 +465,6 @@
     </div>
   </footer>
 
-
   <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
     <div id="qcDrawer" class="hidden bg-[#050508] p-4 rounded-2xl border border-white/10 shadow-2xl space-y-3 w-72">
       <div class="flex items-center justify-between pb-2 border-b border-white/10">
@@ -374,8 +496,22 @@
     </div>
   </div>
 
-  <script src="js/script.js"></script>
-  <script>lucide.createIcons();</script>
+  <!-- ========== SCRIPTS: all deferred / non-blocking ========== -->
+  <script src="js/script.js" defer></script>
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+  <script>
+    // Initialize Lucide when the DOM is ready
+    document.addEventListener('DOMContentLoaded', function () {
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      } else {
+        // Fallback in case Lucide loads late
+        setTimeout(function () {
+          if (typeof lucide !== 'undefined') lucide.createIcons();
+        }, 500);
+      }
+    });
+  </script>
 </body>
 
 </html>
