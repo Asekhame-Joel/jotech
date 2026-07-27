@@ -1,430 +1,671 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Services — JoTechToTech</title>
+  <title>Services — JoTechToTech Built For Businesses</title>
   <meta name="description"
-    content="Web design, e-commerce, SEO, branding & maintenance services for businesses across many industries." />
+    content="Business websites, e-commerce stores, real estate portals, church sites, university portals, SEO, branding — everything you need to win online." />
+  <meta property="og:title" content="Services — JoTechToTech Built For Businesses" />
+  <meta property="og:description"
+    content="Business websites, e-commerce stores, real estate portals, church sites, university portals, SEO, branding — everything you need to win online." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'], mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'] } } } };
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap"
     rel="stylesheet">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'system-ui', 'sans-serif'],
-            display: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
-          },
-          colors: {
-            navy: {
-              50: '#eef4ff', 100: '#dbe6ff', 200: '#b6cdff', 300: '#8aacff',
-              400: '#5e87f7', 500: '#3a64e6', 600: '#2547c4', 700: '#1c3699',
-              800: '#142670', 900: '#0b1840', 950: '#070f29'
-            },
-          },
-          boxShadow: {
-            card: '0 10px 30px -12px rgba(11,24,64,0.18)',
-            glow: '0 20px 60px -20px rgba(28,54,153,0.45)',
-          },
-          backgroundImage: {
-            'hero-gradient': 'linear-gradient(135deg,#0b1840 0%,#142670 45%,#1c3699 100%)',
-            'blue-fade': 'linear-gradient(135deg,#1c3699 0%,#3a64e6 100%)',
-          }
-        }
-      }
-    }
-  </script>
-  <style>
-    html {
-      scroll-behavior: smooth
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      color: #0b1840;
-      background: #ffffff
-    }
-
-    h1,
-    h2,
-    h3,
-    h4 {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      letter-spacing: -0.02em
-    }
-
-    .grid-bg {
-      background-image:
-        radial-gradient(circle at 20% 10%, rgba(58, 100, 230, .18), transparent 40%),
-        radial-gradient(circle at 80% 60%, rgba(94, 135, 247, .18), transparent 45%),
-        linear-gradient(rgba(255, 255, 255, .04) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, .04) 1px, transparent 1px);
-      background-size: auto, auto, 40px 40px, 40px 40px;
-    }
-
-    .fade-up {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: all .8s ease
-    }
-
-    .fade-up.in {
-      opacity: 1;
-      transform: none
-    }
-  </style>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
-<body class="antialiased">
+<body class="min-h-screen bg-[#020203] text-zinc-300 font-sans selection:bg-indigo-500 selection:text-white">
 
+  <header id="site-header"
+    class="fixed top-0 inset-x-0 z-50 transition-all duration-300 bg-transparent py-5 border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between">
+        <a href="index.html" class="logo-wrapper">
 
-  <header class="fixed top-0 inset-x-0 z-50 backdrop-blur bg-white/85 border-b border-navy-100">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-      <a href="/index" class="flex items-center gap-2">
-        <div class="h-9 w-9 rounded-xl bg-blue-fade grid place-items-center shadow-glow">
-          <span class="text-white font-extrabold">J</span>
-        </div>
-        <span class="font-display font-extrabold text-navy-900 text-lg">JoTech<span
-            class="text-navy-600">ToTech</span></span>
-      </a>
-      <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-navy-800">
-        <a href="/index" class="hover:text-navy-600">Home</a>
-        <a href="/about" class="hover:text-navy-600">About</a>
-        <a href="/services" class="text-navy-600 font-bold">Services</a>
-        <a href="/portfolio" class="hover:text-navy-600">Portfolio</a>
-        <a href="/packages" class="hover:text-navy-600">Packages</a>
-        <a href="/testimonials" class="hover:text-navy-600">Testimonials</a>
-        <a href="/contact" class="hover:text-navy-600">Contact</a>
-
-      </nav>
-      <div class="flex items-center gap-3">
-        <a href="/contact"
-          class="hidden sm:inline-flex items-center gap-2 bg-blue-fade text-white text-sm font-semibold px-4 py-2.5 rounded-xl shadow-glow hover:opacity-95">
-          Get Started
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-          </svg>
+          <!-- Text group -->
+          <div class="logo-text-group">
+            <span class="logo-main px-4">
+              JOTECH<span class="highlight">TOTECH</span>
+            </span>
+            <!-- Tagline -->
+            <span class="brand-tagline">
+              <span class="pulse-dot"></span>
+              <span class="divider-line"></span>
+              <span class="tagline-text">Built For Businesses</span>
+            </span>
+          </div>
         </a>
-        <button id="menuBtn" class="lg:hidden p-2 rounded-lg border border-navy-200 text-navy-800">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
+        <nav
+          class="hidden lg:flex items-center gap-6 text-sm font-medium text-zinc-400 bg-white/[0.02] px-6 py-2 rounded-full border border-white/5 backdrop-blur-md">
+          <a href="index.html" class="hover:text-white transition-colors">Home</a><a href="about.html"
+            class="hover:text-white transition-colors">About</a><a href="services.html"
+            class="text-white transition-colors">Services</a><a href="portfolio.html"
+            class="hover:text-white transition-colors">Portfolio</a><a href="packages.html"
+            class="hover:text-white transition-colors">Packages</a><a href="testimonials.html"
+            class="hover:text-white transition-colors">Reviews</a><a href="contact.html"
+            class="hover:text-white transition-colors">Contact</a>
+        </nav>
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="contact.html"
+            class="px-5 py-2 bg-white text-black text-xs font-bold uppercase tracking-wider rounded-full hover:bg-indigo-400 hover:text-white transition-all shadow-md flex items-center gap-1.5">
+            Get Started <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+        <button id="mobileToggle"
+          class="lg:hidden p-2 rounded-lg bg-white/5 text-white border border-white/10 hover:bg-white/10"
+          aria-label="Toggle menu">
+          <i data-lucide="menu" class="w-5 h-5"></i>
         </button>
       </div>
     </div>
-    <div id="mobileMenu" class="lg:hidden hidden border-t border-navy-100 bg-white">
-      <div class="px-4 py-3 grid gap-1 text-navy-800 font-medium">
-        <a href="/index" class="py-2 hover:text-navy-600">Home</a>
-        <a href="/about" class="py-2 hover:text-navy-600">About</a>
-        <a href="/services" class="py-2 text-navy-600 font-bold">Services</a>
-        <a href="/portfolio" class="py-2 hover:text-navy-600">Portfolio</a>
-        <a href="/packages" class="py-2 hover:text-navy-600">Packages</a>
-        <a href="/testimonials" class="py-2 hover:text-navy-600">Testimonials</a>
-        <a href="/contact" class="py-2 hover:text-navy-600">Contact</a>
-
+    <div id="mobileMenu" class="hidden lg:hidden bg-[#0a0a0c] border-b border-white/10 px-4 py-6 mt-3 space-y-4">
+      <div class="grid gap-2"><a href="index.html"
+          class="px-4 py-2 rounded-lg text-zinc-300 hover:bg-white/5 font-medium text-sm transition-colors">Home</a><a
+          href="about.html"
+          class="px-4 py-2 rounded-lg text-zinc-300 hover:bg-white/5 font-medium text-sm transition-colors">About</a><a
+          href="services.html"
+          class="px-4 py-2 rounded-lg text-white bg-white/5 font-medium text-sm transition-colors">Services</a><a
+          href="portfolio.html"
+          class="px-4 py-2 rounded-lg text-zinc-300 hover:bg-white/5 font-medium text-sm transition-colors">Portfolio</a><a
+          href="packages.html"
+          class="px-4 py-2 rounded-lg text-zinc-300 hover:bg-white/5 font-medium text-sm transition-colors">Packages</a><a
+          href="testimonials.html"
+          class="px-4 py-2 rounded-lg text-zinc-300 hover:bg-white/5 font-medium text-sm transition-colors">Reviews</a><a
+          href="contact.html"
+          class="px-4 py-2 rounded-lg text-zinc-300 hover:bg-white/5 font-medium text-sm transition-colors">Contact</a>
+      </div>
+      <div class="pt-3 border-t border-white/10 flex flex-col gap-2.5">
+        <a href="contact.html"
+          class="w-full flex items-center justify-center gap-2 bg-white text-black font-bold uppercase tracking-wider py-2.5 rounded-full text-xs">Get
+          Started Now <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
       </div>
     </div>
   </header>
 
-
-  <section class="relative pt-32 pb-16 bg-hero-gradient text-white overflow-hidden">
-    <div class="absolute inset-0 grid-bg opacity-90"></div>
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <span
-        class="inline-flex items-center gap-2 bg-white/10 border border-white/15 px-3 py-1.5 rounded-full text-xs font-semibold tracking-wide">
-        <span class="h-2 w-2 rounded-full bg-emerald-400"></span> Our Services
-      </span>
-      <h1 class="mt-5 text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.05]">Complete digital solutions for
-        <span class='bg-gradient-to-r from-blue-300 to-white bg-clip-text text-transparent'>modern businesses</span>
-      </h1>
-      <p class="mt-5 text-base sm:text-lg text-blue-100/90 max-w-2xl mx-auto">From custom websites and e-commerce stores
-        to SEO, branding and ongoing maintenance — we handle every part of your digital presence.</p>
+  <section class="relative pt-32 pb-14 grid-bg-dark overflow-hidden border-b border-white/5">
+    <div
+      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-indigo-500/10 rounded-full blur-[140px] pointer-events-none">
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+      <div
+        class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-[10px] font-bold uppercase tracking-widest">
+        <span>Our Digital Solutions</span>
+      </div>
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tighter">Everything You Need to Win
+        Online</h1>
+      <p class="text-zinc-400 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">From bespoke corporate web
+        engineering to church sermon archives, e-commerce stores, and technical SEO.</p>
     </div>
   </section>
 
-
-  <section class="py-20">
+  <section id="services" class="py-20 bg-[#020203] relative border-b border-white/5">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 pb-8 border-b border-white/10">
+        <div class="space-y-2">
+          <div
+            class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-[10px] font-bold uppercase tracking-widest">
+            <span>Our Digital Solutions</span>
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-bold text-white tracking-tighter">Everything You Need to Win Online</h2>
+          <p class="text-zinc-400 text-sm max-w-2xl leading-relaxed">From bespoke corporate web engineering and luxury
+            real estate hubs to church sermon archives, e-commerce stores, and technical SEO.</p>
+        </div>
+        <div class="flex flex-wrap gap-1.5 bg-white/[0.02] p-1.5 rounded-2xl border border-white/10" id="serviceTabs">
+          <button data-cat="all"
+            class="svc-tab px-3.5 py-1.5 rounded-xl text-xs font-semibold transition-all bg-indigo-600 text-white shadow-lg shadow-indigo-500/20">All
+            Services</button>
+          <button data-cat="dev"
+            class="svc-tab px-3.5 py-1.5 rounded-xl text-xs font-semibold transition-all text-zinc-400 hover:text-white">Websites
+            & Portals</button>
+          <button data-cat="ecommerce"
+            class="svc-tab px-3.5 py-1.5 rounded-xl text-xs font-semibold transition-all text-zinc-400 hover:text-white">E-Commerce</button>
+          <button data-cat="design"
+            class="svc-tab px-3.5 py-1.5 rounded-xl text-xs font-semibold transition-all text-zinc-400 hover:text-white">Branding
+            & Design</button>
+          <button data-cat="marketing"
+            class="svc-tab px-3.5 py-1.5 rounded-xl text-xs font-semibold transition-all text-zinc-400 hover:text-white">SEO
+            & Growth</button>
+        </div>
+      </div>
 
+      <div id="servicesGrid" class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <div
-          class="fade-up bg-white border border-navy-100 rounded-2xl p-6 shadow-card hover:-translate-y-1 hover:shadow-glow transition">
-          <div class="h-12 w-12 rounded-xl bg-blue-fade text-white grid place-items-center mb-4">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3 7h18M3 12h18M3 17h18" />
-            </svg>
+          class="bg-white/[0.03] p-6 rounded-2xl border border-white/10 hover:border-indigo-500/30 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-indigo-500/10 flex flex-col justify-between group relative overflow-hidden service-card"
+          data-category="dev">
+          <span
+            class="absolute top-4 right-4 text-[10px] font-bold px-2.5 py-1 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 font-mono">High
+            Demand</span>
+          <div class="space-y-4">
+            <div
+              class="h-12 w-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center transition-colors group-hover:bg-indigo-600 group-hover:text-white">
+              <i data-lucide="building-2" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-white text-lg group-hover:text-indigo-300 transition-colors tracking-tight">
+                Business Websites</h3>
+              <p class="text-xs text-zinc-400 leading-relaxed mt-2">Polished corporate websites that build credibility
+                and turn visitors into high-value paying clients.</p>
+            </div>
+            <div class="space-y-1.5 pt-2">
+              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Custom Visual Architecture</span></div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Lead Capture Forms</span></div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Mobile-First Responsive</span></div>
+            </div>
           </div>
-          <h3 class="text-lg font-bold text-navy-900">Business Websites</h3>
-          <p class="mt-2 text-sm text-navy-700/80">Polished corporate sites that turn visitors into customers.</p>
+          <div class="pt-6 mt-4 border-t border-white/10 flex items-center justify-between">
+            <button data-service-id="business-websites"
+              class="view-scope-btn text-xs font-semibold text-indigo-400 hover:text-white flex items-center gap-1 transition-colors">View
+              Scope <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+            <a href="contact.html?service=Business%20Websites"
+              class="px-3.5 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs transition-all shadow shadow-indigo-500/20">Request
+              Service</a>
+          </div>
         </div>
         <div
-          class="fade-up bg-white border border-navy-100 rounded-2xl p-6 shadow-card hover:-translate-y-1 hover:shadow-glow transition">
-          <div class="h-12 w-12 rounded-xl bg-blue-fade text-white grid place-items-center mb-4">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2 9m12-9l2 9M9 22a1 1 0 100-2 1 1 0 000 2zm8 0a1 1 0 100-2 1 1 0 000 2z" />
-            </svg>
+          class="bg-white/[0.03] p-6 rounded-2xl border border-white/10 hover:border-indigo-500/30 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-indigo-500/10 flex flex-col justify-between group relative overflow-hidden service-card"
+          data-category="ecommerce">
+          <span
+            class="absolute top-4 right-4 text-[10px] font-bold px-2.5 py-1 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 font-mono">High
+            Demand</span>
+          <div class="space-y-4">
+            <div
+              class="h-12 w-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center transition-colors group-hover:bg-indigo-600 group-hover:text-white">
+              <i data-lucide="shopping-bag" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-white text-lg group-hover:text-indigo-300 transition-colors tracking-tight">
+                E-Commerce Stores</h3>
+              <p class="text-xs text-zinc-400 leading-relaxed mt-2">Sell physical or digital products online with secure
+                shopping carts, localized payment gateways, and inventory control.</p>
+            </div>
+            <div class="space-y-1.5 pt-2">
+              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Product Catalog & Search</span></div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Paystack/Stripe Payment Gateway</span></div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>WhatsApp Direct Order Button</span></div>
+            </div>
           </div>
-          <h3 class="text-lg font-bold text-navy-900">E-commerce Stores</h3>
-          <p class="mt-2 text-sm text-navy-700/80">Sell online with secure carts, payments and product management.</p>
+          <div class="pt-6 mt-4 border-t border-white/10 flex items-center justify-between">
+            <button data-service-id="ecommerce-stores"
+              class="view-scope-btn text-xs font-semibold text-indigo-400 hover:text-white flex items-center gap-1 transition-colors">View
+              Scope <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+            <a href="contact.html?service=E-Commerce%20Stores"
+              class="px-3.5 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs transition-all shadow shadow-indigo-500/20">Request
+              Service</a>
+          </div>
         </div>
         <div
-          class="fade-up bg-white border border-navy-100 rounded-2xl p-6 shadow-card hover:-translate-y-1 hover:shadow-glow transition">
-          <div class="h-12 w-12 rounded-xl bg-blue-fade text-white grid place-items-center mb-4">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l9-9 9 9M5 10v10h14V10" />
-            </svg>
+          class="bg-white/[0.03] p-6 rounded-2xl border border-white/10 hover:border-indigo-500/30 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-indigo-500/10 flex flex-col justify-between group relative overflow-hidden service-card"
+          data-category="dev">
+          <span
+            class="absolute top-4 right-4 text-[10px] font-bold px-2.5 py-1 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 font-mono">High
+            Demand</span>
+          <div class="space-y-4">
+            <div
+              class="h-12 w-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center transition-colors group-hover:bg-indigo-600 group-hover:text-white">
+              <i data-lucide="home" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-white text-lg group-hover:text-indigo-300 transition-colors tracking-tight">Real
+                Estate Websites</h3>
+              <p class="text-xs text-zinc-400 leading-relaxed mt-2">Showcase property listings with interactive
+                galleries, advanced location search filters, and agent lead forms.</p>
+            </div>
+            <div class="space-y-1.5 pt-2">
+              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Advanced Property Filter</span></div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Agent Profiles & Contacts</span></div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>WhatsApp Direct Inquiry</span></div>
+            </div>
           </div>
-          <h3 class="text-lg font-bold text-navy-900">Real Estate Websites</h3>
-          <p class="mt-2 text-sm text-navy-700/80">Property listings, search filters, agent profiles & lead capture.</p>
+          <div class="pt-6 mt-4 border-t border-white/10 flex items-center justify-between">
+            <button data-service-id="real-estate"
+              class="view-scope-btn text-xs font-semibold text-indigo-400 hover:text-white flex items-center gap-1 transition-colors">View
+              Scope <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+            <a href="contact.html?service=Real%20Estate%20Websites"
+              class="px-3.5 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs transition-all shadow shadow-indigo-500/20">Request
+              Service</a>
+          </div>
         </div>
         <div
-          class="fade-up bg-white border border-navy-100 rounded-2xl p-6 shadow-card hover:-translate-y-1 hover:shadow-glow transition">
-          <div class="h-12 w-12 rounded-xl bg-blue-fade text-white grid place-items-center mb-4">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18M5 12h14M9 9l3-3 3 3" />
-            </svg>
+          class="bg-white/[0.03] p-6 rounded-2xl border border-white/10 hover:border-indigo-500/30 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-indigo-500/10 flex flex-col justify-between group relative overflow-hidden service-card"
+          data-category="dev">
+
+          <div class="space-y-4">
+            <div
+              class="h-12 w-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center transition-colors group-hover:bg-indigo-600 group-hover:text-white">
+              <i data-lucide="church" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-white text-lg group-hover:text-indigo-300 transition-colors tracking-tight">
+                Church Websites</h3>
+              <p class="text-xs text-zinc-400 leading-relaxed mt-2">Sermon streaming archives, upcoming events calendar,
+                online giving/tithing, and vibrant ministry hubs.</p>
+            </div>
+            <div class="space-y-1.5 pt-2">
+              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Video & Audio Sermon Vault</span></div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Online Giving / Tithing Link</span></div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Event Management Calendar</span></div>
+            </div>
           </div>
-          <h3 class="text-lg font-bold text-navy-900">Church Websites</h3>
-          <p class="mt-2 text-sm text-navy-700/80">Sermons, events, giving and community — beautifully presented.</p>
+          <div class="pt-6 mt-4 border-t border-white/10 flex items-center justify-between">
+            <button data-service-id="church-websites"
+              class="view-scope-btn text-xs font-semibold text-indigo-400 hover:text-white flex items-center gap-1 transition-colors">View
+              Scope <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+            <a href="contact.html?service=Church%20Websites"
+              class="px-3.5 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs transition-all shadow shadow-indigo-500/20">Request
+              Service</a>
+          </div>
         </div>
         <div
-          class="fade-up bg-white border border-navy-100 rounded-2xl p-6 shadow-card hover:-translate-y-1 hover:shadow-glow transition">
-          <div class="h-12 w-12 rounded-xl bg-blue-fade text-white grid place-items-center mb-4">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M12 3l10 6-10 6L2 9l10-6zM4 11v6a8 8 0 0016 0v-6" />
-            </svg>
+          class="bg-white/[0.03] p-6 rounded-2xl border border-white/10 hover:border-indigo-500/30 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-indigo-500/10 flex flex-col justify-between group relative overflow-hidden service-card"
+          data-category="dev">
+
+          <div class="space-y-4">
+            <div
+              class="h-12 w-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center transition-colors group-hover:bg-indigo-600 group-hover:text-white">
+              <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-white text-lg group-hover:text-indigo-300 transition-colors tracking-tight">
+                Universities & School Websites</h3>
+              <p class="text-xs text-zinc-400 leading-relaxed mt-2">Admissions portals, news hubs, faculty directories,
+                academic calendars, and student information layouts.</p>
+            </div>
+            <div class="space-y-1.5 pt-2">
+              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Admissions Portal Links</span></div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Department & Faculty Pages</span></div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Academic News Bulletin</span></div>
+            </div>
           </div>
-          <h3 class="text-lg font-bold text-navy-900">universites Websites</h3>
-          <p class="mt-2 text-sm text-navy-700/80">Admissions, news, gallery and parent communication portals.</p>
+          <div class="pt-6 mt-4 border-t border-white/10 flex items-center justify-between">
+            <button data-service-id="university-websites"
+              class="view-scope-btn text-xs font-semibold text-indigo-400 hover:text-white flex items-center gap-1 transition-colors">View
+              Scope <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+            <a href="contact.html?service=Universities%20&%20School%20Websites"
+              class="px-3.5 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs transition-all shadow shadow-indigo-500/20">Request
+              Service</a>
+          </div>
         </div>
         <div
-          class="fade-up bg-white border border-navy-100 rounded-2xl p-6 shadow-card hover:-translate-y-1 hover:shadow-glow transition">
-          <div class="h-12 w-12 rounded-xl bg-blue-fade text-white grid place-items-center mb-4">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M4 4h16v16H4z M4 14l4-4 4 4 4-4 4 4" />
-            </svg>
+          class="bg-white/[0.03] p-6 rounded-2xl border border-white/10 hover:border-indigo-500/30 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-indigo-500/10 flex flex-col justify-between group relative overflow-hidden service-card"
+          data-category="design">
+
+          <div class="space-y-4">
+            <div
+              class="h-12 w-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center transition-colors group-hover:bg-indigo-600 group-hover:text-white">
+              <i data-lucide="user-check" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-white text-lg group-hover:text-indigo-300 transition-colors tracking-tight">
+                Portfolio Websites</h3>
+              <p class="text-xs text-zinc-400 leading-relaxed mt-2">Showcase your personal brand, creative projects,
+                case studies, and resume with stunning typography.</p>
+            </div>
+            <div class="space-y-1.5 pt-2">
+              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Interactive Case Studies</span></div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Resume Download Button</span></div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Booking Calendar Integration</span></div>
+            </div>
           </div>
-          <h3 class="text-lg font-bold text-navy-900">Portfolio Websites</h3>
-          <p class="mt-2 text-sm text-navy-700/80">Showcase creative work with elegant galleries and case studies.</p>
+          <div class="pt-6 mt-4 border-t border-white/10 flex items-center justify-between">
+            <button data-service-id="portfolio-websites"
+              class="view-scope-btn text-xs font-semibold text-indigo-400 hover:text-white flex items-center gap-1 transition-colors">View
+              Scope <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+            <a href="contact.html?service=Portfolio%20Websites"
+              class="px-3.5 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs transition-all shadow shadow-indigo-500/20">Request
+              Service</a>
+          </div>
         </div>
         <div
-          class="fade-up bg-white border border-navy-100 rounded-2xl p-6 shadow-card hover:-translate-y-1 hover:shadow-glow transition">
-          <div class="h-12 w-12 rounded-xl bg-blue-fade text-white grid place-items-center mb-4">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7" />
-            </svg>
+          class="bg-white/[0.03] p-6 rounded-2xl border border-white/10 hover:border-indigo-500/30 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-indigo-500/10 flex flex-col justify-between group relative overflow-hidden service-card"
+          data-category="marketing">
+
+          <div class="space-y-4">
+            <div
+              class="h-12 w-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center transition-colors group-hover:bg-indigo-600 group-hover:text-white">
+              <i data-lucide="sparkles" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-white text-lg group-hover:text-indigo-300 transition-colors tracking-tight">
+                High-Converting Landing Pages</h3>
+              <p class="text-xs text-zinc-400 leading-relaxed mt-2">Laser-focused single-page layouts built specifically
+                for ad campaigns, product launches, and lead magnet captures.</p>
+            </div>
+            <div class="space-y-1.5 pt-2">
+              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Persuasive Copywriting Structure</span></div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>A/B Test Ready Layouts</span></div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Instant WhatsApp / Email Alerts</span></div>
+            </div>
           </div>
-          <h3 class="text-lg font-bold text-navy-900">Landing Pages</h3>
-          <p class="mt-2 text-sm text-navy-700/80">High-converting pages built for ads, launches & campaigns.</p>
+          <div class="pt-6 mt-4 border-t border-white/10 flex items-center justify-between">
+            <button data-service-id="landing-pages"
+              class="view-scope-btn text-xs font-semibold text-indigo-400 hover:text-white flex items-center gap-1 transition-colors">View
+              Scope <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+            <a href="contact.html?service=High-Converting%20Landing%20Pages"
+              class="px-3.5 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs transition-all shadow shadow-indigo-500/20">Request
+              Service</a>
+          </div>
         </div>
         <div
-          class="fade-up bg-white border border-navy-100 rounded-2xl p-6 shadow-card hover:-translate-y-1 hover:shadow-glow transition">
-          <div class="h-12 w-12 rounded-xl bg-blue-fade text-white grid place-items-center mb-4">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M21 21l-4.35-4.35M10 18a8 8 0 100-16 8 8 0 000 16z" />
-            </svg>
+          class="bg-white/[0.03] p-6 rounded-2xl border border-white/10 hover:border-indigo-500/30 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-indigo-500/10 flex flex-col justify-between group relative overflow-hidden service-card"
+          data-category="marketing">
+
+          <div class="space-y-4">
+            <div
+              class="h-12 w-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center transition-colors group-hover:bg-indigo-600 group-hover:text-white">
+              <i data-lucide="search" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-white text-lg group-hover:text-indigo-300 transition-colors tracking-tight">SEO
+                & Google Ranking</h3>
+              <p class="text-xs text-zinc-400 leading-relaxed mt-2">Technical, on-page, and keyword optimization to help
+                your business rank on the first page of Google search results.</p>
+            </div>
+            <div class="space-y-1.5 pt-2">
+              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Keyword Competitor Analysis</span></div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>On-Page Meta & Schema Markup</span></div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>XML Sitemap & Indexing</span></div>
+            </div>
           </div>
-          <h3 class="text-lg font-bold text-navy-900">SEO Optimization</h3>
-          <p class="mt-2 text-sm text-navy-700/80">Rank higher on Google with technical & on-page SEO.</p>
+          <div class="pt-6 mt-4 border-t border-white/10 flex items-center justify-between">
+            <button data-service-id="seo-optimization"
+              class="view-scope-btn text-xs font-semibold text-indigo-400 hover:text-white flex items-center gap-1 transition-colors">View
+              Scope <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+            <a href="contact.html?service=SEO%20&%20Google%20Ranking"
+              class="px-3.5 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs transition-all shadow shadow-indigo-500/20">Request
+              Service</a>
+          </div>
         </div>
         <div
-          class="fade-up bg-white border border-navy-100 rounded-2xl p-6 shadow-card hover:-translate-y-1 hover:shadow-glow transition">
-          <div class="h-12 w-12 rounded-xl bg-blue-fade text-white grid place-items-center mb-4">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v6h6M20 20v-6h-6M4 20l16-16" />
-            </svg>
+          class="bg-white/[0.03] p-6 rounded-2xl border border-white/10 hover:border-indigo-500/30 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-indigo-500/10 flex flex-col justify-between group relative overflow-hidden service-card"
+          data-category="dev">
+
+          <div class="space-y-4">
+            <div
+              class="h-12 w-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center transition-colors group-hover:bg-indigo-600 group-hover:text-white">
+              <i data-lucide="refresh-cw" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-white text-lg group-hover:text-indigo-300 transition-colors tracking-tight">
+                Website Redesign & Revamp</h3>
+              <p class="text-xs text-zinc-400 leading-relaxed mt-2">Transform outdated, slow, or ugly websites into
+                cutting-edge, mobile-first engines that drive revenue.</p>
+            </div>
+            <div class="space-y-1.5 pt-2">
+              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Modern UI/UX Makeover</span></div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Mobile Responsiveness Overhaul</span></div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Speed Optimization (90+ Score)</span></div>
+            </div>
           </div>
-          <h3 class="text-lg font-bold text-navy-900">Website Redesign</h3>
-          <p class="mt-2 text-sm text-navy-700/80">Modernize outdated websites for speed, design & conversion.</p>
+          <div class="pt-6 mt-4 border-t border-white/10 flex items-center justify-between">
+            <button data-service-id="website-redesign"
+              class="view-scope-btn text-xs font-semibold text-indigo-400 hover:text-white flex items-center gap-1 transition-colors">View
+              Scope <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+            <a href="contact.html?service=Website%20Redesign%20&%20Revamp"
+              class="px-3.5 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs transition-all shadow shadow-indigo-500/20">Request
+              Service</a>
+          </div>
         </div>
         <div
-          class="fade-up bg-white border border-navy-100 rounded-2xl p-6 shadow-card hover:-translate-y-1 hover:shadow-glow transition">
-          <div class="h-12 w-12 rounded-xl bg-blue-fade text-white grid place-items-center mb-4">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M12 6V3m0 18v-3m6-6h3M3 12h3m12.73-6.73l2.12-2.12M3.15 20.85l2.12-2.12m0-13.46L3.15 3.15m17.7 17.7l-2.12-2.12M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-            </svg>
+          class="bg-white/[0.03] p-6 rounded-2xl border border-white/10 hover:border-indigo-500/30 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-indigo-500/10 flex flex-col justify-between group relative overflow-hidden service-card"
+          data-category="marketing">
+
+          <div class="space-y-4">
+            <div
+              class="h-12 w-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center transition-colors group-hover:bg-indigo-600 group-hover:text-white">
+              <i data-lucide="shield-check" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-white text-lg group-hover:text-indigo-300 transition-colors tracking-tight">
+                Website Maintenance & Security</h3>
+              <p class="text-xs text-zinc-400 leading-relaxed mt-2">Monthly backups, security updates, speed monitoring,
+                content updates, and ongoing technical support.</p>
+            </div>
+            <div class="space-y-1.5 pt-2">
+              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Automated Weekly Backups</span></div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Malware & SSL Security Guard</span></div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Priority Content Updates</span></div>
+            </div>
           </div>
-          <h3 class="text-lg font-bold text-navy-900">Website Maintenance</h3>
-          <p class="mt-2 text-sm text-navy-700/80">Updates, backups, monitoring and performance care.</p>
+          <div class="pt-6 mt-4 border-t border-white/10 flex items-center justify-between">
+            <button data-service-id="website-maintenance"
+              class="view-scope-btn text-xs font-semibold text-indigo-400 hover:text-white flex items-center gap-1 transition-colors">View
+              Scope <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+            <a href="contact.html?service=Website%20Maintenance%20&%20Security"
+              class="px-3.5 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs transition-all shadow shadow-indigo-500/20">Request
+              Service</a>
+          </div>
         </div>
         <div
-          class="fade-up bg-white border border-navy-100 rounded-2xl p-6 shadow-card hover:-translate-y-1 hover:shadow-glow transition">
-          <div class="h-12 w-12 rounded-xl bg-blue-fade text-white grid place-items-center mb-4">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M12 2l2.39 4.84L20 8l-4 3.9.94 5.46L12 14.77 7.06 17.36 8 11.9 4 8l5.61-1.16L12 2z" />
-            </svg>
+          class="bg-white/[0.03] p-6 rounded-2xl border border-white/10 hover:border-indigo-500/30 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-indigo-500/10 flex flex-col justify-between group relative overflow-hidden service-card"
+          data-category="design">
+
+          <div class="space-y-4">
+            <div
+              class="h-12 w-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center transition-colors group-hover:bg-indigo-600 group-hover:text-white">
+              <i data-lucide="palette" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-white text-lg group-hover:text-indigo-300 transition-colors tracking-tight">
+                Branding & Logo Design</h3>
+              <p class="text-xs text-zinc-400 leading-relaxed mt-2">Custom vector logos, color systems, typography
+                pairings, and brand identity guidelines.</p>
+            </div>
+            <div class="space-y-1.5 pt-2">
+              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Primary & Secondary Logo Styles</span></div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Vector Source Files (SVG/PNG/PDF)</span></div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Color Palette & Font Pairing</span></div>
+            </div>
           </div>
-          <h3 class="text-lg font-bold text-navy-900">Branding & Logo</h3>
-          <p class="mt-2 text-sm text-navy-700/80">Logos, color systems & visual identities that stand out.</p>
+          <div class="pt-6 mt-4 border-t border-white/10 flex items-center justify-between">
+            <button data-service-id="branding-identity"
+              class="view-scope-btn text-xs font-semibold text-indigo-400 hover:text-white flex items-center gap-1 transition-colors">View
+              Scope <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+            <a href="contact.html?service=Branding%20&%20Logo%20Design"
+              class="px-3.5 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs transition-all shadow shadow-indigo-500/20">Request
+              Service</a>
+          </div>
         </div>
         <div
-          class="fade-up bg-white border border-navy-100 rounded-2xl p-6 shadow-card hover:-translate-y-1 hover:shadow-glow transition">
-          <div class="h-12 w-12 rounded-xl bg-blue-fade text-white grid place-items-center mb-4">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M4 4h16v16H4z M4 4l16 16 M20 4L4 20" />
-            </svg>
+          class="bg-white/[0.03] p-6 rounded-2xl border border-white/10 hover:border-indigo-500/30 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-indigo-500/10 flex flex-col justify-between group relative overflow-hidden service-card"
+          data-category="design">
+
+          <div class="space-y-4">
+            <div
+              class="h-12 w-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center transition-colors group-hover:bg-indigo-600 group-hover:text-white">
+              <i data-lucide="layers" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-white text-lg group-hover:text-indigo-300 transition-colors tracking-tight">
+                Graphic & Marketing Design</h3>
+              <p class="text-xs text-zinc-400 leading-relaxed mt-2">Eye-catching flyers, banners, social media posts,
+                e-books, and promotional print/digital assets.</p>
+            </div>
+            <div class="space-y-1.5 pt-2">
+              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>High-Resolution Print/Digital</span></div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Social Media Post Bundles</span></div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Custom Event Flyers & Banners</span></div>
+            </div>
           </div>
-          <h3 class="text-lg font-bold text-navy-900">Graphic Design</h3>
-          <p class="mt-2 text-sm text-navy-700/80">Flyers, banners, social posts and brand assets that pop.</p>
+          <div class="pt-6 mt-4 border-t border-white/10 flex items-center justify-between">
+            <button data-service-id="graphic-design"
+              class="view-scope-btn text-xs font-semibold text-indigo-400 hover:text-white flex items-center gap-1 transition-colors">View
+              Scope <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+            <a href="contact.html?service=Graphic%20&%20Marketing%20Design"
+              class="px-3.5 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs transition-all shadow shadow-indigo-500/20">Request
+              Service</a>
+          </div>
         </div>
       </div>
     </div>
-  </section>
 
-  <section class="py-20 bg-navy-50/40 border-y border-navy-100">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-2xl mx-auto fade-up">
-        <span class="text-navy-600 font-semibold">Industries We Serve</span>
-        <h2 class="mt-3 text-3xl sm:text-4xl font-extrabold text-navy-900">Tailored for your sector</h2>
-      </div>
-      <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="fade-up bg-white border border-navy-100 rounded-2xl p-6 shadow-card">
-          <h3 class="font-bold text-navy-900">Small Businesses</h3>
-          <p class="mt-2 text-sm text-navy-700/85">Affordable, professional sites that build trust fast.</p>
-        </div>
-        <div class="fade-up bg-white border border-navy-100 rounded-2xl p-6 shadow-card">
-          <h3 class="font-bold text-navy-900">Growing Companies</h3>
-          <p class="mt-2 text-sm text-navy-700/85">Scalable platforms that grow with your team.</p>
-        </div>
-        <div class="fade-up bg-white border border-navy-100 rounded-2xl p-6 shadow-card">
-          <h3 class="font-bold text-navy-900">Real Estate</h3>
-          <p class="mt-2 text-sm text-navy-700/85">Listings, lead capture and agent profiles.</p>
-        </div>
-        <div class="fade-up bg-white border border-navy-100 rounded-2xl p-6 shadow-card">
-          <h3 class="font-bold text-navy-900">E-commerce</h3>
-          <p class="mt-2 text-sm text-navy-700/85">Stores with secure checkout and product management.</p>
-        </div>
-        <div class="fade-up bg-white border border-navy-100 rounded-2xl p-6 shadow-card">
-          <h3 class="font-bold text-navy-900">universitess</h3>
-          <p class="mt-2 text-sm text-navy-700/85">Admissions, news and parent communication.</p>
-        </div>
-        <div class="fade-up bg-white border border-navy-100 rounded-2xl p-6 shadow-card">
-          <h3 class="font-bold text-navy-900">Churches</h3>
-          <p class="mt-2 text-sm text-navy-700/85">Sermons, events, giving and member portals.</p>
-        </div>
-      </div>
+    <div id="serviceModal"
+      class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+      <div
+        class="bg-[#050508] max-w-2xl w-full p-6 sm:p-8 rounded-3xl border border-white/10 shadow-2xl relative space-y-6 max-h-[90vh] overflow-y-auto"
+        id="serviceModalContent"></div>
     </div>
-  </section>
+    <script id="services-data"
+      type="application/json">[{"id": "business-websites", "title": "Business Websites", "category": "dev", "shortDesc": "Polished corporate websites that build credibility and turn visitors into high-value paying clients.", "fullDesc": "We build high-converting corporate and small business websites tailored to your exact industry. Built with ultra-fast modern React & Tailwind CSS, custom contact forms, lead capture tools, and seamless responsiveness.", "iconName": "building-2", "features": ["Custom Visual Architecture", "Lead Capture Forms", "Mobile-First Responsive", "SSL & Domain Setup"], "deliverables": ["Responsive Website", "Content Management Setup", "Fast Page Load Optimization", "1-Month Post Launch Support"], "popular": true}, {"id": "ecommerce-stores", "title": "E-Commerce Stores", "category": "ecommerce", "shortDesc": "Sell physical or digital products online with secure shopping carts, localized payment gateways, and inventory control.", "fullDesc": "Complete online stores designed for high sales conversion. Integrated with Paystack, Flutterwave, Stripe, or manual order processing, automated email receipts, product search filters, and inventory tracking.", "iconName": "shopping-bag", "features": ["Product Catalog & Search", "Paystack/Stripe Payment Gateway", "WhatsApp Direct Order Button", "Order & Inventory Panel"], "deliverables": ["E-Commerce Storefront", "Payment Integration", "Admin Control Training", "Mobile Shopping UX"], "popular": true}, {"id": "real-estate", "title": "Real Estate Websites", "category": "dev", "shortDesc": "Showcase property listings with interactive galleries, advanced location search filters, and agent lead forms.", "fullDesc": "High-end real estate portals built to showcase luxury properties, land listings, and rentals. Features property comparison tools, virtual tour embeds, WhatsApp agent quick-connect, and lead forms.", "iconName": "home", "features": ["Advanced Property Filter", "Agent Profiles & Contacts", "WhatsApp Direct Inquiry", "Google Maps Location Embed"], "deliverables": ["Real Estate Web Application", "Property Upload Guide", "SEO Location Pages", "Mobile Listing View"], "popular": true}, {"id": "church-websites", "title": "Church Websites", "category": "dev", "shortDesc": "Sermon streaming archives, upcoming events calendar, online giving/tithing, and vibrant ministry hubs.", "fullDesc": "Engage your congregation and expand your global reach with a modern church website. Features video sermon archives, event registration, online giving portals, daily devotional blogs, and new member contact tools.", "iconName": "church", "features": ["Video & Audio Sermon Vault", "Online Giving / Tithing Link", "Event Management Calendar", "New Convert / Contact Forms"], "deliverables": ["Church Portal Layout", "Sermon Manager Setup", "Mobile Giving Link", "Media Gallery"]}, {"id": "university-websites", "title": "Universities & School Websites", "category": "dev", "shortDesc": "Admissions portals, news hubs, faculty directories, academic calendars, and student information layouts.", "fullDesc": "Academic institutional websites built for trust, clarity, and ease of navigation for parents, students, and faculty. Features department overviews, admission application links, news bulletin boards, and portal links.", "iconName": "graduation-cap", "features": ["Admissions Portal Links", "Department & Faculty Pages", "Academic News Bulletin", "Document Download Hub"], "deliverables": ["Institutional Website Layout", "Admissions Form Setup", "Department Directory", "Parent & Student Portal Entry"]}, {"id": "portfolio-websites", "title": "Portfolio Websites", "category": "design", "shortDesc": "Showcase your personal brand, creative projects, case studies, and resume with stunning typography.", "fullDesc": "Personal portfolio websites for developers, designers, consultants, executives, and creative professionals. Built to highlight your achievements, present detailed case studies, and book high-ticket clients.", "iconName": "user-check", "features": ["Interactive Case Studies", "Resume Download Button", "Booking Calendar Integration", "Visual Project Grid"], "deliverables": ["Custom Portfolio Layout", "Social & CV Integrations", "Domain Connection", "Fast Mobile Presentation"]}, {"id": "landing-pages", "title": "High-Converting Landing Pages", "category": "marketing", "shortDesc": "Laser-focused single-page layouts built specifically for ad campaigns, product launches, and lead magnet captures.", "fullDesc": "Maximized for conversion rate optimization (CRO). Includes compelling hero copy, benefit breakdown cards, social proof badges, countdown timers, and immediate lead capture forms.", "iconName": "sparkles", "features": ["Persuasive Copywriting Structure", "A/B Test Ready Layouts", "Instant WhatsApp / Email Alerts", "Fast Sub-1s Loading Time"], "deliverables": ["Single Page Sales Funnel", "Analytics Tracking Tag", "Lead Storage Automation", "Campaign Ready Setup"]}, {"id": "seo-optimization", "title": "SEO & Google Ranking", "category": "marketing", "shortDesc": "Technical, on-page, and keyword optimization to help your business rank on the first page of Google search results.", "fullDesc": "Get found by prospective clients looking for your exact services. We optimize meta tags, site speed, schema structured data, internal linking, and local Google My Business signals.", "iconName": "search", "features": ["Keyword Competitor Analysis", "On-Page Meta & Schema Markup", "XML Sitemap & Indexing", "Google Business Profile Setup"], "deliverables": ["SEO Keyword Strategy", "Technical Audit & Fixes", "Google Search Console Connect", "30-Day Ranking Report"]}, {"id": "website-redesign", "title": "Website Redesign & Revamp", "category": "dev", "shortDesc": "Transform outdated, slow, or ugly websites into cutting-edge, mobile-first engines that drive revenue.", "fullDesc": "Is your current website embarrassment holding back sales? We preserve your existing content and domain equity while upgrading your design into a sleek, fast, ultra-modern experience.", "iconName": "refresh-cw", "features": ["Modern UI/UX Makeover", "Mobile Responsiveness Overhaul", "Speed Optimization (90+ Score)", "Copywriting Refinement"], "deliverables": ["Complete Design Revamp", "Mobile Optimization", "Zero Downtime Migration", "Post-Launch Care"]}, {"id": "website-maintenance", "title": "Website Maintenance & Security", "category": "marketing", "shortDesc": "Monthly backups, security updates, speed monitoring, content updates, and ongoing technical support.", "fullDesc": "Never worry about site crashes, broken links, malware, or outdated information. We manage hosting, domain renewals, security patches, regular updates, and content additions for you.", "iconName": "shield-check", "features": ["Automated Weekly Backups", "Malware & SSL Security Guard", "Priority Content Updates", "Speed Performance Checks"], "deliverables": ["Monthly Health Report", "Guaranteed 99.9% Uptime", "Dedicated Support Hotline", "Security Shielding"]}, {"id": "branding-identity", "title": "Branding & Logo Design", "category": "design", "shortDesc": "Custom vector logos, color systems, typography pairings, and brand identity guidelines.", "fullDesc": "A cohesive visual identity builds trust before a client reads a single word. We craft modern, memorable logos and brand guidelines that set you apart from every competitor in your market.", "iconName": "palette", "features": ["Primary & Secondary Logo Styles", "Vector Source Files (SVG/PNG/PDF)", "Color Palette & Font Pairing", "Brand Identity Guide"], "deliverables": ["Complete Logo Package", "Social Media Avatars", "Brand Guidelines Sheet", "Print-Ready Assets"]}, {"id": "graphic-design", "title": "Graphic & Marketing Design", "category": "design", "shortDesc": "Eye-catching flyers, banners, social media posts, e-books, and promotional print/digital assets.", "fullDesc": "High-impact promotional graphics for ad campaigns, social media marketing, church programs, corporate events, and product announcements. Designed to command attention immediately.", "iconName": "layers", "features": ["High-Resolution Print/Digital", "Social Media Post Bundles", "Custom Event Flyers & Banners", "Fast 24-48h Delivery Option"], "deliverables": ["Editable Vector Files", "Exported Web Formats", "Commercial Use License", "Multiple Revisions"]}]</script>
 
-  <section class="py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-2xl mx-auto fade-up">
-        <span class="text-navy-600 font-semibold">Our Process</span>
-        <h2 class="mt-3 text-3xl sm:text-4xl font-extrabold text-navy-900">From idea to launch in 4 steps</h2>
-      </div>
-      <div class="mt-12 grid md:grid-cols-4 gap-6">
-        <div class="fade-up bg-white border border-navy-100 rounded-2xl p-6 shadow-card">
-          <div class="text-navy-300 font-extrabold text-3xl">01</div>
-          <h3 class="mt-2 font-bold text-navy-900">Discover</h3>
-          <p class="text-sm text-navy-700/85 mt-2">Understand goals, audience and brand.</p>
-        </div>
-        <div class="fade-up bg-white border border-navy-100 rounded-2xl p-6 shadow-card">
-          <div class="text-navy-300 font-extrabold text-3xl">02</div>
-          <h3 class="mt-2 font-bold text-navy-900">Design</h3>
-          <p class="text-sm text-navy-700/85 mt-2">Create mockups & visual direction.</p>
-        </div>
-        <div class="fade-up bg-white border border-navy-100 rounded-2xl p-6 shadow-card">
-          <div class="text-navy-300 font-extrabold text-3xl">03</div>
-          <h3 class="mt-2 font-bold text-navy-900">Develop</h3>
-          <p class="text-sm text-navy-700/85 mt-2">Build clean, fast, secure code.</p>
-        </div>
-        <div class="fade-up bg-white border border-navy-100 rounded-2xl p-6 shadow-card">
-          <div class="text-navy-300 font-extrabold text-3xl">04</div>
-          <h3 class="mt-2 font-bold text-navy-900">Deliver</h3>
-          <p class="text-sm text-navy-700/85 mt-2">Launch, train and support.</p>
-        </div>
-      </div>
-    </div>
   </section>
 
 
-  <!-- CTA Strip -->
-  <section class="bg-blue-fade text-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 grid md:grid-cols-2 gap-6 items-center">
-      <div>
-        <h3 class="text-2xl sm:text-3xl font-extrabold">Ready to grow your business online?</h3>
-        <p class="text-blue-100 mt-2">Let's build a website that actually works for your goals.</p>
-      </div>
-      <div class="md:text-right">
-        <a href="/contact"
-          class="inline-flex items-center gap-2 bg-white text-navy-800 font-semibold px-6 py-3 rounded-xl shadow-glow hover:bg-blue-50">
-          Start Your Project
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-          </svg>
+  <footer class="bg-[#020203] text-zinc-400 border-t border-white/5">
+    <div class="bg-white/[0.02] border-b border-white/5 py-10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div>
+          <h3 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Ready to Double Your Website Inquiries?
+          </h3>
+          <p class="text-xs sm:text-sm text-zinc-400 mt-1">Let's build a modern, high-converting digital site tailored
+            to your brand.</p>
+        </div>
+        <a href="https://wa.me/2348114556256?text=Hello%20JoTechToTech,%20I%20am%20ready%20to%20start%20my%20website%20project!"
+          target="_blank" rel="noopener"
+          class="px-6 py-3 rounded-2xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-sm shadow-lg shadow-indigo-500/20 transition-all shrink-0 flex items-center gap-2">
+          Start Your Project Now <i data-lucide="arrow-right" class="w-4 h-4"></i>
         </a>
       </div>
     </div>
-  </section>
-
-  <footer class="bg-navy-950 text-blue-100/80">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 grid md:grid-cols-4 gap-10">
-      <div>
-        <div class="flex items-center gap-2">
-          <div class="h-9 w-9 rounded-xl bg-blue-fade grid place-items-center"><span
-              class="text-white font-extrabold">J</span></div>
-          <span class="font-display font-extrabold text-white text-lg">JoTech<span
-              class="text-navy-300">ToTech</span></span>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 grid grid-cols-2 md:grid-cols-5 gap-8 text-xs">
+      <div class="col-span-2 space-y-4">
+        <div class="flex items-center gap-2.5">
+          <div
+            class="h-9 w-9 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center font-extrabold text-indigo-400">
+            J</div>
+          <span class="font-bold text-white text-lg tracking-tight">JoTech<span
+              class="text-indigo-400">ToTech</span></span>
         </div>
-        <p class="mt-4 text-sm">Modern, responsive, SEO-ready websites for businesses, universitess, churches, real
-          estate &
-          e-commerce.</p>
+        <p class="text-zinc-400 leading-relaxed max-w-sm">JoTechToTech is a leading web design &amp; AI digital
+          solutions studio crafting modern, responsive, SEO-ready websites for corporate brands, universities, real
+          estate, churches, and e-commerce merchants.</p>
+        <div class="pt-2 text-zinc-400 space-y-1 font-mono">
+          <div>Phone: +234 811 455 6256</div>
+          <div>Email: asekhamejoel@gmail.com</div>
+        </div>
       </div>
-      <div>
-        <h4 class="text-white font-semibold mb-3">Company</h4>
-        <ul class="space-y-2 text-sm">
-          <li><a href="/about" class="hover:text-white">About</a></li>
-          <li><a href="/services" class="hover:text-white">Services</a></li>
-          <li><a href="/portfolio" class="hover:text-white">Portfolio</a></li>
-          <li><a href="/packages" class="hover:text-white">Packages</a></li>
+      <div class="space-y-3">
+        <h4 class="text-white font-bold text-sm tracking-tight">Navigation</h4>
+        <ul class="space-y-2 text-zinc-400">
+          <li><a href="index.html" class="hover:text-indigo-400 transition-colors">Home</a></li>
+          <li><a href="about.html" class="hover:text-indigo-400 transition-colors">About</a></li>
+          <li><a href="services.html" class="hover:text-indigo-400 transition-colors">Services</a></li>
+          <li><a href="portfolio.html" class="hover:text-indigo-400 transition-colors">Portfolio</a></li>
+          <li><a href="packages.html" class="hover:text-indigo-400 transition-colors">Packages</a></li>
         </ul>
       </div>
-      <div>
-        <h4 class="text-white font-semibold mb-3">Resources</h4>
-        <ul class="space-y-2 text-sm">
-          <li><a href="/testimonials" class="hover:text-white">Testimonials</a></li>
-          <li><a href="/contact" class="hover:text-white">Contact</a></li>
-          <li><a href="/services" class="hover:text-white">SEO & Performance</a></li>
-          <li><a href="/services" class="hover:text-white">Maintenance</a></li>
+      <div class="space-y-3">
+        <h4 class="text-white font-bold text-sm tracking-tight">Industries</h4>
+        <ul class="space-y-2 text-zinc-400">
+          <li><a href="portfolio.html" class="hover:text-indigo-400 transition-colors">Corporate Websites</a></li>
+          <li><a href="portfolio.html" class="hover:text-indigo-400 transition-colors">Real Estate Portals</a></li>
+          <li><a href="portfolio.html" class="hover:text-indigo-400 transition-colors">E-Commerce Stores</a></li>
+          <li><a href="portfolio.html" class="hover:text-indigo-400 transition-colors">Church Websites</a></li>
+          <li><a href="portfolio.html" class="hover:text-indigo-400 transition-colors">University Portals</a></li>
         </ul>
       </div>
-      <div>
-        <h4 class="text-white font-semibold mb-3">Get in Touch</h4>
-        <ul class="space-y-2 text-sm">
-          <li>Email: asekhamejoel@gmail.com</li>
-          <li>Phone: +234 811 455 6256</li>
-          <li>Mon - Sun</li>
+      <div class="space-y-3">
+        <h4 class="text-white font-bold text-sm tracking-tight">Packages</h4>
+        <ul class="space-y-2 text-zinc-400">
+          <li><a href="packages.html" class="hover:text-indigo-400 transition-colors">Starter Business (₦120k)</a></li>
+          <li><a href="packages.html" class="hover:text-indigo-400 transition-colors">Professional Standard (₦250k)</a>
+          </li>
+          <li><a href="packages.html" class="hover:text-indigo-400 transition-colors">E-Commerce Store (₦450k)</a></li>
+          <li><a href="packages.html" class="hover:text-indigo-400 transition-colors">Enterprise Custom</a></li>
+          <li><a href="testimonials.html" class="hover:text-indigo-400 transition-colors">Client Reviews</a></li>
         </ul>
       </div>
     </div>
-    <div class="border-t border-white/10">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 text-xs flex flex-col sm:flex-row gap-2 justify-between">
-        <span>© 2025 JoTechToTech. All rights reserved.</span>
-        <span>Built with passion for businesses that want to grow.</span>
+    <div class="border-t border-white/5 bg-[#020203] py-5">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-xs text-zinc-500 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <span>© 2026 JoTechToTech. All rights reserved.</span>
+        <span class="flex items-center gap-1">Built with passion &amp; AI innovation for businesses that want to
+          grow.</span>
       </div>
     </div>
   </footer>
 
-  <script>
-    const btn = document.getElementById('menuBtn');
-    const menu = document.getElementById('mobileMenu');
-    if (btn) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
-    }, { threshold: .12 });
-    document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
-  </script>
+
+  <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
+    <div id="qcDrawer" class="hidden bg-[#050508] p-4 rounded-2xl border border-white/10 shadow-2xl space-y-3 w-72">
+      <div class="flex items-center justify-between pb-2 border-b border-white/10">
+        <div class="flex items-center gap-2">
+          <span class="h-2 w-2 rounded-full bg-emerald-400 animate-ping"></span>
+          <span class="text-xs font-bold text-white tracking-tight">JoTechToTech Help</span>
+        </div>
+        <button id="qcClose" class="text-zinc-400 hover:text-white p-1"><i data-lucide="x" class="w-4 h-4"></i></button>
+      </div>
+      <a href="contact.html"
+        class="w-full py-2.5 px-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl text-xs font-semibold flex items-center gap-2 shadow-lg shadow-indigo-500/20 transition-all">
+        <i data-lucide="sparkles" class="w-3.5 h-3.5 text-indigo-200"></i> Get in Touch
+      </a>
+      <a href="https://wa.me/2348114556256?text=Hello%20JoTechToTech,%20I%20want%20to%20ask%20a%20quick%20question."
+        target="_blank" rel="noopener"
+        class="w-full py-2.5 px-3 bg-emerald-500/10 border border-emerald-500/20 hover:bg-emerald-500/20 text-emerald-400 rounded-xl text-xs font-semibold flex items-center justify-center gap-2 transition-all font-mono">
+        <i data-lucide="message-square" class="w-3.5 h-3.5"></i> WhatsApp (+234 811 455 6256)
+      </a>
+    </div>
+    <div class="flex items-center gap-2">
+      <button id="scrollTop"
+        class="p-3 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 text-white shadow-lg backdrop-blur-md transition-colors"
+        title="Scroll to Top"><i data-lucide="arrow-up" class="w-4 h-4"></i></button>
+      <button id="qcToggle"
+        class="h-12 w-12 rounded-2xl bg-indigo-600 text-white flex items-center justify-center shadow-xl shadow-indigo-500/30 hover:scale-105 active:scale-95 transition-all relative">
+        <i data-lucide="message-square" class="w-6 h-6"></i>
+        <span class="absolute -top-1 -right-1 h-3.5 w-3.5 rounded-full bg-emerald-400 border-2 border-[#020203]"></span>
+      </button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script>lucide.createIcons();</script>
 </body>
 
 </html>
