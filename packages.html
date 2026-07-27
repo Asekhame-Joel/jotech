@@ -14,13 +14,23 @@
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Preload critical CSS -->
+    <link rel="preload" href="css/tailwind.css" as="style">
+    <link rel="preload" href="css/styles.css" as="style">
+
+    <!-- Load Google Fonts asynchronously (non-blocking) -->
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap"
+            rel="stylesheet">
+    </noscript>
+
     <link rel="stylesheet" href="css/tailwind.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="https://unpkg.com/lucide@latest">
-    </script>
+    <script src="https://unpkg.com/lucide@latest" defer></script>
     <style>
         /* --- Logo styles --- */
         .logo-wrapper {

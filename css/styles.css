@@ -10,6 +10,112 @@ body {
   overflow-x: hidden;
 }
 
+/* Minimal critical styles – ensures text and layout are visible immediately */
+/* body {
+      background-color: #020203;
+      color: #d4d4d8;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      opacity: 1;
+    } */
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  text-decoration: none;
+}
+
+.logo-text-group {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.logo-main {
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  font-style: italic;
+  color: #fff;
+}
+
+.logo-main .highlight {
+  color: #818cf8;
+}
+
+.brand-tagline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.5625rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #a1a1aa;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.12), rgba(16, 185, 129, 0.08));
+  padding: 0.2rem 0.75rem 0.2rem 0.6rem;
+  border-radius: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease;
+  width: fit-content;
+}
+
+.brand-tagline .pulse-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+  background: #10b981;
+  animation: pulse-glow 1.8s ease-in-out infinite;
+  flex-shrink: 0;
+  box-shadow: 0 0 8px rgba(16, 185, 129, 0.3);
+}
+
+@keyframes pulse-glow {
+
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: scale(0.75);
+  }
+}
+
+.brand-tagline .divider-line {
+  width: 12px;
+  height: 1px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
+  flex-shrink: 0;
+}
+
+.brand-tagline .tagline-text {
+  background: linear-gradient(to right, #c7d2fe, #a5b4fc, #818cf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+#site-header {
+  transition: background 0.3s, padding 0.3s;
+}
+
+.grid-bg-dark {
+  background-image:
+    radial-gradient(circle at 15% 15%, rgba(99, 102, 241, 0.15), transparent 45%),
+    radial-gradient(circle at 85% 75%, rgba(99, 102, 241, 0.1), transparent 50%),
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: auto, auto, 48px 48px, 48px 48px;
+}
+
 /* Sophisticated Dark UI Utilities */
 .grid-bg-dark {
   background-image:
