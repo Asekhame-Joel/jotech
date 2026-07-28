@@ -101,22 +101,6 @@
     </div>
   </header>
 
-  <section class="relative pt-32 pb-14 grid-bg-dark overflow-hidden border-b border-white/5">
-    <div
-      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-indigo-500/10 rounded-full blur-[140px] pointer-events-none">
-    </div>
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-      <div
-        class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-[10px] font-bold uppercase tracking-widest">
-        <span>Our Digital Solutions</span>
-      </div>
-      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tighter">Everything You Need to Win
-        Online</h1>
-      <p class="text-zinc-400 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">From bespoke corporate web
-        engineering to church sermon archives, e-commerce stores, and technical SEO.</p>
-    </div>
-  </section>
-
   <section id="services" class="py-20 bg-[#020203] relative border-b border-white/5">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 pb-8 border-b border-white/10">
@@ -148,6 +132,8 @@
       </div>
 
       <div id="servicesGrid" class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Business Websites -->
         <div
           class="bg-white/[0.03] p-6 rounded-2xl border border-white/10 hover:border-indigo-500/30 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-indigo-500/10 flex flex-col justify-between group relative overflow-hidden service-card"
           data-category="dev">
@@ -157,7 +143,15 @@
           <div class="space-y-4">
             <div
               class="h-12 w-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center transition-colors group-hover:bg-indigo-600 group-hover:text-white">
-              <i data-lucide="building-2" class="w-6 h-6"></i>
+              <!-- building-2 -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                <path d="M10 12h4" />
+                <path d="M10 8h4" />
+                <path d="M14 21v-3a2 2 0 0 0-4 0v3" />
+                <path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2" />
+                <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16" />
+              </svg>
             </div>
             <div>
               <h3 class="font-bold text-white text-lg group-hover:text-indigo-300 transition-colors tracking-tight">
@@ -166,23 +160,48 @@
                 and turn visitors into high-value paying clients.</p>
             </div>
             <div class="space-y-1.5 pt-2">
-              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
-                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Custom Visual Architecture</span></div>
-              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
-                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Lead Capture Forms</span></div>
-              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
-                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Mobile-First Responsive</span></div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                <span>Custom Visual Architecture</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                <span>Lead Capture Forms</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                <span>Mobile-First Responsive</span>
+              </div>
             </div>
           </div>
           <div class="pt-6 mt-4 border-t border-white/10 flex items-center justify-between">
             <button data-service-id="business-websites"
               class="view-scope-btn text-xs font-semibold text-indigo-400 hover:text-white flex items-center gap-1 transition-colors">View
-              Scope <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+              Scope <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="w-3.5 h-3.5">
+                <path d="M5 12h14" />
+                <path d="M12 5l7 7-7 7" />
+              </svg></button>
             <a href="contact.html?service=Business%20Websites"
               class="px-3.5 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs transition-all shadow shadow-indigo-500/20">Request
               Service</a>
           </div>
         </div>
+
+        <!-- E-Commerce Stores -->
         <div
           class="bg-white/[0.03] p-6 rounded-2xl border border-white/10 hover:border-indigo-500/30 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-indigo-500/10 flex flex-col justify-between group relative overflow-hidden service-card"
           data-category="ecommerce">
@@ -192,7 +211,14 @@
           <div class="space-y-4">
             <div
               class="h-12 w-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center transition-colors group-hover:bg-indigo-600 group-hover:text-white">
-              <i data-lucide="shopping-bag" class="w-6 h-6"></i>
+              <!-- shopping-bag -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                <path d="M16 10a4 4 0 0 1-8 0" />
+                <path d="M3.103 6.034h17.794" />
+                <path
+                  d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z" />
+              </svg>
             </div>
             <div>
               <h3 class="font-bold text-white text-lg group-hover:text-indigo-300 transition-colors tracking-tight">
@@ -201,23 +227,48 @@
                 shopping carts, localized payment gateways, and inventory control.</p>
             </div>
             <div class="space-y-1.5 pt-2">
-              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
-                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Product Catalog & Search</span></div>
-              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
-                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Paystack/Stripe Payment Gateway</span></div>
-              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
-                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>WhatsApp Direct Order Button</span></div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                <span>Product Catalog & Search</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                <span>Paystack/Stripe Payment Gateway</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                <span>WhatsApp Direct Order Button</span>
+              </div>
             </div>
           </div>
           <div class="pt-6 mt-4 border-t border-white/10 flex items-center justify-between">
             <button data-service-id="ecommerce-stores"
               class="view-scope-btn text-xs font-semibold text-indigo-400 hover:text-white flex items-center gap-1 transition-colors">View
-              Scope <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+              Scope <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="w-3.5 h-3.5">
+                <path d="M5 12h14" />
+                <path d="M12 5l7 7-7 7" />
+              </svg></button>
             <a href="contact.html?service=E-Commerce%20Stores"
               class="px-3.5 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs transition-all shadow shadow-indigo-500/20">Request
               Service</a>
           </div>
         </div>
+
+        <!-- Real Estate Websites -->
         <div
           class="bg-white/[0.03] p-6 rounded-2xl border border-white/10 hover:border-indigo-500/30 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-indigo-500/10 flex flex-col justify-between group relative overflow-hidden service-card"
           data-category="dev">
@@ -227,7 +278,13 @@
           <div class="space-y-4">
             <div
               class="h-12 w-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center transition-colors group-hover:bg-indigo-600 group-hover:text-white">
-              <i data-lucide="home" class="w-6 h-6"></i>
+              <!-- home -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+                <path
+                  d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              </svg>
             </div>
             <div>
               <h3 class="font-bold text-white text-lg group-hover:text-indigo-300 transition-colors tracking-tight">Real
@@ -236,31 +293,64 @@
                 galleries, advanced location search filters, and agent lead forms.</p>
             </div>
             <div class="space-y-1.5 pt-2">
-              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
-                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Advanced Property Filter</span></div>
-              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
-                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Agent Profiles & Contacts</span></div>
-              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
-                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>WhatsApp Direct Inquiry</span></div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                <span>Advanced Property Filter</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                <span>Agent Profiles & Contacts</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                <span>WhatsApp Direct Inquiry</span>
+              </div>
             </div>
           </div>
           <div class="pt-6 mt-4 border-t border-white/10 flex items-center justify-between">
             <button data-service-id="real-estate"
               class="view-scope-btn text-xs font-semibold text-indigo-400 hover:text-white flex items-center gap-1 transition-colors">View
-              Scope <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+              Scope <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="w-3.5 h-3.5">
+                <path d="M5 12h14" />
+                <path d="M12 5l7 7-7 7" />
+              </svg></button>
             <a href="contact.html?service=Real%20Estate%20Websites"
               class="px-3.5 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs transition-all shadow shadow-indigo-500/20">Request
               Service</a>
           </div>
         </div>
+
+        <!-- Church Websites -->
         <div
           class="bg-white/[0.03] p-6 rounded-2xl border border-white/10 hover:border-indigo-500/30 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-indigo-500/10 flex flex-col justify-between group relative overflow-hidden service-card"
           data-category="dev">
-
           <div class="space-y-4">
             <div
               class="h-12 w-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center transition-colors group-hover:bg-indigo-600 group-hover:text-white">
-              <i data-lucide="church" class="w-6 h-6"></i>
+              <!-- church -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                <path d="M10 9h4" />
+                <path d="M12 7v5" />
+                <path d="M14 21v-3a2 2 0 0 0-4 0v3" />
+                <path
+                  d="m18 9 3.52 2.147a1 1 0 0 1 .48.854V19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-6.999a1 1 0 0 1 .48-.854L6 9" />
+                <path d="M6 21V7a1 1 0 0 1 .376-.782l5-3.999a1 1 0 0 1 1.249.001l5 4A1 1 0 0 1 18 7v14" />
+              </svg>
             </div>
             <div>
               <h3 class="font-bold text-white text-lg group-hover:text-indigo-300 transition-colors tracking-tight">
@@ -269,31 +359,62 @@
                 online giving/tithing, and vibrant ministry hubs.</p>
             </div>
             <div class="space-y-1.5 pt-2">
-              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
-                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Video & Audio Sermon Vault</span></div>
-              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
-                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Online Giving / Tithing Link</span></div>
-              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
-                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Event Management Calendar</span></div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                <span>Video & Audio Sermon Vault</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                <span>Online Giving / Tithing Link</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                <span>Event Management Calendar</span>
+              </div>
             </div>
           </div>
           <div class="pt-6 mt-4 border-t border-white/10 flex items-center justify-between">
             <button data-service-id="church-websites"
               class="view-scope-btn text-xs font-semibold text-indigo-400 hover:text-white flex items-center gap-1 transition-colors">View
-              Scope <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+              Scope <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="w-3.5 h-3.5">
+                <path d="M5 12h14" />
+                <path d="M12 5l7 7-7 7" />
+              </svg></button>
             <a href="contact.html?service=Church%20Websites"
               class="px-3.5 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs transition-all shadow shadow-indigo-500/20">Request
               Service</a>
           </div>
         </div>
+
+        <!-- Universities & School Websites -->
         <div
           class="bg-white/[0.03] p-6 rounded-2xl border border-white/10 hover:border-indigo-500/30 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-indigo-500/10 flex flex-col justify-between group relative overflow-hidden service-card"
           data-category="dev">
-
           <div class="space-y-4">
             <div
               class="h-12 w-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center transition-colors group-hover:bg-indigo-600 group-hover:text-white">
-              <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+              <!-- graduation-cap -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                <path
+                  d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" />
+                <path d="M22 10v6" />
+                <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
+              </svg>
             </div>
             <div>
               <h3 class="font-bold text-white text-lg group-hover:text-indigo-300 transition-colors tracking-tight">
@@ -302,31 +423,61 @@
                 academic calendars, and student information layouts.</p>
             </div>
             <div class="space-y-1.5 pt-2">
-              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
-                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Admissions Portal Links</span></div>
-              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
-                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Department & Faculty Pages</span></div>
-              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
-                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Academic News Bulletin</span></div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                <span>Admissions Portal Links</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                <span>Department & Faculty Pages</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                <span>Academic News Bulletin</span>
+              </div>
             </div>
           </div>
           <div class="pt-6 mt-4 border-t border-white/10 flex items-center justify-between">
             <button data-service-id="university-websites"
               class="view-scope-btn text-xs font-semibold text-indigo-400 hover:text-white flex items-center gap-1 transition-colors">View
-              Scope <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+              Scope <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="w-3.5 h-3.5">
+                <path d="M5 12h14" />
+                <path d="M12 5l7 7-7 7" />
+              </svg></button>
             <a href="contact.html?service=Universities%20&%20School%20Websites"
               class="px-3.5 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs transition-all shadow shadow-indigo-500/20">Request
               Service</a>
           </div>
         </div>
+
+        <!-- Portfolio Websites -->
         <div
           class="bg-white/[0.03] p-6 rounded-2xl border border-white/10 hover:border-indigo-500/30 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-indigo-500/10 flex flex-col justify-between group relative overflow-hidden service-card"
           data-category="design">
-
           <div class="space-y-4">
             <div
               class="h-12 w-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center transition-colors group-hover:bg-indigo-600 group-hover:text-white">
-              <i data-lucide="user-check" class="w-6 h-6"></i>
+              <!-- user-check -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                <path d="m16 11 2 2 4-4" />
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+              </svg>
             </div>
             <div>
               <h3 class="font-bold text-white text-lg group-hover:text-indigo-300 transition-colors tracking-tight">
@@ -335,31 +486,63 @@
                 case studies, and resume with stunning typography.</p>
             </div>
             <div class="space-y-1.5 pt-2">
-              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
-                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Interactive Case Studies</span></div>
-              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
-                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Resume Download Button</span></div>
-              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
-                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Booking Calendar Integration</span></div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                <span>Interactive Case Studies</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                <span>Resume Download Button</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                <span>Booking Calendar Integration</span>
+              </div>
             </div>
           </div>
           <div class="pt-6 mt-4 border-t border-white/10 flex items-center justify-between">
             <button data-service-id="portfolio-websites"
               class="view-scope-btn text-xs font-semibold text-indigo-400 hover:text-white flex items-center gap-1 transition-colors">View
-              Scope <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+              Scope <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="w-3.5 h-3.5">
+                <path d="M5 12h14" />
+                <path d="M12 5l7 7-7 7" />
+              </svg></button>
             <a href="contact.html?service=Portfolio%20Websites"
               class="px-3.5 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs transition-all shadow shadow-indigo-500/20">Request
               Service</a>
           </div>
         </div>
+
+        <!-- High-Converting Landing Pages -->
         <div
           class="bg-white/[0.03] p-6 rounded-2xl border border-white/10 hover:border-indigo-500/30 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-indigo-500/10 flex flex-col justify-between group relative overflow-hidden service-card"
           data-category="marketing">
-
           <div class="space-y-4">
             <div
               class="h-12 w-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center transition-colors group-hover:bg-indigo-600 group-hover:text-white">
-              <i data-lucide="sparkles" class="w-6 h-6"></i>
+              <!-- sparkles -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                <path
+                  d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" />
+                <path d="M20 2v4" />
+                <path d="M22 4h-4" />
+                <circle cx="4" cy="20" r="2" />
+              </svg>
             </div>
             <div>
               <h3 class="font-bold text-white text-lg group-hover:text-indigo-300 transition-colors tracking-tight">
@@ -368,31 +551,60 @@
                 for ad campaigns, product launches, and lead magnet captures.</p>
             </div>
             <div class="space-y-1.5 pt-2">
-              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
-                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Persuasive Copywriting Structure</span></div>
-              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
-                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>A/B Test Ready Layouts</span></div>
-              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
-                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Instant WhatsApp / Email Alerts</span></div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                <span>Persuasive Copywriting Structure</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                <span>A/B Test Ready Layouts</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                <span>Instant WhatsApp / Email Alerts</span>
+              </div>
             </div>
           </div>
           <div class="pt-6 mt-4 border-t border-white/10 flex items-center justify-between">
             <button data-service-id="landing-pages"
               class="view-scope-btn text-xs font-semibold text-indigo-400 hover:text-white flex items-center gap-1 transition-colors">View
-              Scope <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+              Scope <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="w-3.5 h-3.5">
+                <path d="M5 12h14" />
+                <path d="M12 5l7 7-7 7" />
+              </svg></button>
             <a href="contact.html?service=High-Converting%20Landing%20Pages"
               class="px-3.5 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs transition-all shadow shadow-indigo-500/20">Request
               Service</a>
           </div>
         </div>
+
+        <!-- SEO & Google Ranking -->
         <div
           class="bg-white/[0.03] p-6 rounded-2xl border border-white/10 hover:border-indigo-500/30 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-indigo-500/10 flex flex-col justify-between group relative overflow-hidden service-card"
           data-category="marketing">
-
           <div class="space-y-4">
             <div
               class="h-12 w-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center transition-colors group-hover:bg-indigo-600 group-hover:text-white">
-              <i data-lucide="search" class="w-6 h-6"></i>
+              <!-- search -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                <circle cx="11" cy="11" r="8" />
+                <path d="m21 21-4.35-4.35" />
+              </svg>
             </div>
             <div>
               <h3 class="font-bold text-white text-lg group-hover:text-indigo-300 transition-colors tracking-tight">SEO
@@ -401,31 +613,62 @@
                 your business rank on the first page of Google search results.</p>
             </div>
             <div class="space-y-1.5 pt-2">
-              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
-                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Keyword Competitor Analysis</span></div>
-              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
-                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>On-Page Meta & Schema Markup</span></div>
-              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
-                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>XML Sitemap & Indexing</span></div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                <span>Keyword Competitor Analysis</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                <span>On-Page Meta & Schema Markup</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                <span>XML Sitemap & Indexing</span>
+              </div>
             </div>
           </div>
           <div class="pt-6 mt-4 border-t border-white/10 flex items-center justify-between">
             <button data-service-id="seo-optimization"
               class="view-scope-btn text-xs font-semibold text-indigo-400 hover:text-white flex items-center gap-1 transition-colors">View
-              Scope <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+              Scope <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="w-3.5 h-3.5">
+                <path d="M5 12h14" />
+                <path d="M12 5l7 7-7 7" />
+              </svg></button>
             <a href="contact.html?service=SEO%20&%20Google%20Ranking"
               class="px-3.5 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs transition-all shadow shadow-indigo-500/20">Request
               Service</a>
           </div>
         </div>
+
+        <!-- Website Redesign & Revamp -->
         <div
           class="bg-white/[0.03] p-6 rounded-2xl border border-white/10 hover:border-indigo-500/30 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-indigo-500/10 flex flex-col justify-between group relative overflow-hidden service-card"
           data-category="dev">
-
           <div class="space-y-4">
             <div
               class="h-12 w-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center transition-colors group-hover:bg-indigo-600 group-hover:text-white">
-              <i data-lucide="refresh-cw" class="w-6 h-6"></i>
+              <!-- refresh-cw -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.25 2.25L21 7" />
+                <path d="M21 3v4h-4" />
+                <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.25-2.25L3 17" />
+                <path d="M3 21v-4h4" />
+              </svg>
             </div>
             <div>
               <h3 class="font-bold text-white text-lg group-hover:text-indigo-300 transition-colors tracking-tight">
@@ -434,31 +677,61 @@
                 cutting-edge, mobile-first engines that drive revenue.</p>
             </div>
             <div class="space-y-1.5 pt-2">
-              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
-                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Modern UI/UX Makeover</span></div>
-              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
-                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Mobile Responsiveness Overhaul</span></div>
-              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
-                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Speed Optimization (90+ Score)</span></div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                <span>Modern UI/UX Makeover</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                <span>Mobile Responsiveness Overhaul</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                <span>Speed Optimization (90+ Score)</span>
+              </div>
             </div>
           </div>
           <div class="pt-6 mt-4 border-t border-white/10 flex items-center justify-between">
             <button data-service-id="website-redesign"
               class="view-scope-btn text-xs font-semibold text-indigo-400 hover:text-white flex items-center gap-1 transition-colors">View
-              Scope <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+              Scope <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="w-3.5 h-3.5">
+                <path d="M5 12h14" />
+                <path d="M12 5l7 7-7 7" />
+              </svg></button>
             <a href="contact.html?service=Website%20Redesign%20&%20Revamp"
               class="px-3.5 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs transition-all shadow shadow-indigo-500/20">Request
               Service</a>
           </div>
         </div>
+
+        <!-- Website Maintenance & Security -->
         <div
           class="bg-white/[0.03] p-6 rounded-2xl border border-white/10 hover:border-indigo-500/30 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-indigo-500/10 flex flex-col justify-between group relative overflow-hidden service-card"
           data-category="marketing">
-
           <div class="space-y-4">
             <div
               class="h-12 w-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center transition-colors group-hover:bg-indigo-600 group-hover:text-white">
-              <i data-lucide="shield-check" class="w-6 h-6"></i>
+              <!-- shield-check -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                <path
+                  d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+                <path d="m9 12 2 2 4-4" />
+              </svg>
             </div>
             <div>
               <h3 class="font-bold text-white text-lg group-hover:text-indigo-300 transition-colors tracking-tight">
@@ -467,31 +740,65 @@
                 content updates, and ongoing technical support.</p>
             </div>
             <div class="space-y-1.5 pt-2">
-              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
-                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Automated Weekly Backups</span></div>
-              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
-                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Malware & SSL Security Guard</span></div>
-              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
-                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Priority Content Updates</span></div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                <span>Automated Weekly Backups</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                <span>Malware & SSL Security Guard</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                <span>Priority Content Updates</span>
+              </div>
             </div>
           </div>
           <div class="pt-6 mt-4 border-t border-white/10 flex items-center justify-between">
             <button data-service-id="website-maintenance"
               class="view-scope-btn text-xs font-semibold text-indigo-400 hover:text-white flex items-center gap-1 transition-colors">View
-              Scope <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+              Scope <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="w-3.5 h-3.5">
+                <path d="M5 12h14" />
+                <path d="M12 5l7 7-7 7" />
+              </svg></button>
             <a href="contact.html?service=Website%20Maintenance%20&%20Security"
               class="px-3.5 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs transition-all shadow shadow-indigo-500/20">Request
               Service</a>
           </div>
         </div>
+
+        <!-- Branding & Logo Design -->
         <div
           class="bg-white/[0.03] p-6 rounded-2xl border border-white/10 hover:border-indigo-500/30 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-indigo-500/10 flex flex-col justify-between group relative overflow-hidden service-card"
           data-category="design">
-
           <div class="space-y-4">
             <div
               class="h-12 w-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center transition-colors group-hover:bg-indigo-600 group-hover:text-white">
-              <i data-lucide="palette" class="w-6 h-6"></i>
+              <!-- palette -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 2a7 7 0 0 0-3 13.4 3 3 0 0 1-4.6-3.7 7 7 0 0 0 7.6-9.7z" />
+                <circle cx="7.5" cy="9.5" r="1.5" />
+                <circle cx="16.5" cy="9.5" r="1.5" />
+                <circle cx="12" cy="17" r="1.5" />
+                <path d="M12 6v2" />
+                <path d="M12 14v2" />
+              </svg>
             </div>
             <div>
               <h3 class="font-bold text-white text-lg group-hover:text-indigo-300 transition-colors tracking-tight">
@@ -500,31 +807,62 @@
                 pairings, and brand identity guidelines.</p>
             </div>
             <div class="space-y-1.5 pt-2">
-              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
-                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Primary & Secondary Logo Styles</span></div>
-              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
-                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Vector Source Files (SVG/PNG/PDF)</span></div>
-              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
-                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Color Palette & Font Pairing</span></div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                <span>Primary & Secondary Logo Styles</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                <span>Vector Source Files (SVG/PNG/PDF)</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                <span>Color Palette & Font Pairing</span>
+              </div>
             </div>
           </div>
           <div class="pt-6 mt-4 border-t border-white/10 flex items-center justify-between">
             <button data-service-id="branding-identity"
               class="view-scope-btn text-xs font-semibold text-indigo-400 hover:text-white flex items-center gap-1 transition-colors">View
-              Scope <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+              Scope <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="w-3.5 h-3.5">
+                <path d="M5 12h14" />
+                <path d="M12 5l7 7-7 7" />
+              </svg></button>
             <a href="contact.html?service=Branding%20&%20Logo%20Design"
               class="px-3.5 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs transition-all shadow shadow-indigo-500/20">Request
               Service</a>
           </div>
         </div>
+
+        <!-- Graphic & Marketing Design -->
         <div
           class="bg-white/[0.03] p-6 rounded-2xl border border-white/10 hover:border-indigo-500/30 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-indigo-500/10 flex flex-col justify-between group relative overflow-hidden service-card"
           data-category="design">
-
           <div class="space-y-4">
             <div
               class="h-12 w-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center transition-colors group-hover:bg-indigo-600 group-hover:text-white">
-              <i data-lucide="layers" class="w-6 h-6"></i>
+              <!-- layers -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                <path
+                  d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.57 3.91a2 2 0 0 0 1.66 0l8.57-3.91a1 1 0 0 0 0-1.83z" />
+                <path d="m22 12-8.57 3.91a2 2 0 0 1-1.66 0L3 12" />
+                <path d="m22 16-8.57 3.91a2 2 0 0 1-1.66 0L3 16" />
+              </svg>
             </div>
             <div>
               <h3 class="font-bold text-white text-lg group-hover:text-indigo-300 transition-colors tracking-tight">
@@ -533,35 +871,60 @@
                 e-books, and promotional print/digital assets.</p>
             </div>
             <div class="space-y-1.5 pt-2">
-              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
-                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>High-Resolution Print/Digital</span></div>
-              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
-                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Social Media Post Bundles</span></div>
-              <div class="flex items-center gap-2 text-xs text-zinc-300"><i data-lucide="check-circle-2"
-                  class="w-3.5 h-3.5 text-indigo-400 shrink-0"></i><span>Custom Event Flyers & Banners</span></div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                <span>High-Resolution Print/Digital</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                <span>Social Media Post Bundles</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-zinc-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="w-3.5 h-3.5 text-indigo-400 shrink-0">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                <span>Custom Event Flyers & Banners</span>
+              </div>
             </div>
           </div>
           <div class="pt-6 mt-4 border-t border-white/10 flex items-center justify-between">
             <button data-service-id="graphic-design"
               class="view-scope-btn text-xs font-semibold text-indigo-400 hover:text-white flex items-center gap-1 transition-colors">View
-              Scope <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></button>
+              Scope <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="w-3.5 h-3.5">
+                <path d="M5 12h14" />
+                <path d="M12 5l7 7-7 7" />
+              </svg></button>
             <a href="contact.html?service=Graphic%20&%20Marketing%20Design"
               class="px-3.5 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs transition-all shadow shadow-indigo-500/20">Request
               Service</a>
           </div>
         </div>
+
       </div>
     </div>
 
+    <!-- Service Modal -->
     <div id="serviceModal"
       class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
       <div
         class="bg-[#050508] max-w-2xl w-full p-6 sm:p-8 rounded-3xl border border-white/10 shadow-2xl relative space-y-6 max-h-[90vh] overflow-y-auto"
         id="serviceModalContent"></div>
     </div>
+
     <script id="services-data"
       type="application/json">[{"id": "business-websites", "title": "Business Websites", "category": "dev", "shortDesc": "Polished corporate websites that build credibility and turn visitors into high-value paying clients.", "fullDesc": "We build high-converting corporate and small business websites tailored to your exact industry. Built with ultra-fast modern React & Tailwind CSS, custom contact forms, lead capture tools, and seamless responsiveness.", "iconName": "building-2", "features": ["Custom Visual Architecture", "Lead Capture Forms", "Mobile-First Responsive", "SSL & Domain Setup"], "deliverables": ["Responsive Website", "Content Management Setup", "Fast Page Load Optimization", "1-Month Post Launch Support"], "popular": true}, {"id": "ecommerce-stores", "title": "E-Commerce Stores", "category": "ecommerce", "shortDesc": "Sell physical or digital products online with secure shopping carts, localized payment gateways, and inventory control.", "fullDesc": "Complete online stores designed for high sales conversion. Integrated with Paystack, Flutterwave, Stripe, or manual order processing, automated email receipts, product search filters, and inventory tracking.", "iconName": "shopping-bag", "features": ["Product Catalog & Search", "Paystack/Stripe Payment Gateway", "WhatsApp Direct Order Button", "Order & Inventory Panel"], "deliverables": ["E-Commerce Storefront", "Payment Integration", "Admin Control Training", "Mobile Shopping UX"], "popular": true}, {"id": "real-estate", "title": "Real Estate Websites", "category": "dev", "shortDesc": "Showcase property listings with interactive galleries, advanced location search filters, and agent lead forms.", "fullDesc": "High-end real estate portals built to showcase luxury properties, land listings, and rentals. Features property comparison tools, virtual tour embeds, WhatsApp agent quick-connect, and lead forms.", "iconName": "home", "features": ["Advanced Property Filter", "Agent Profiles & Contacts", "WhatsApp Direct Inquiry", "Google Maps Location Embed"], "deliverables": ["Real Estate Web Application", "Property Upload Guide", "SEO Location Pages", "Mobile Listing View"], "popular": true}, {"id": "church-websites", "title": "Church Websites", "category": "dev", "shortDesc": "Sermon streaming archives, upcoming events calendar, online giving/tithing, and vibrant ministry hubs.", "fullDesc": "Engage your congregation and expand your global reach with a modern church website. Features video sermon archives, event registration, online giving portals, daily devotional blogs, and new member contact tools.", "iconName": "church", "features": ["Video & Audio Sermon Vault", "Online Giving / Tithing Link", "Event Management Calendar", "New Convert / Contact Forms"], "deliverables": ["Church Portal Layout", "Sermon Manager Setup", "Mobile Giving Link", "Media Gallery"]}, {"id": "university-websites", "title": "Universities & School Websites", "category": "dev", "shortDesc": "Admissions portals, news hubs, faculty directories, academic calendars, and student information layouts.", "fullDesc": "Academic institutional websites built for trust, clarity, and ease of navigation for parents, students, and faculty. Features department overviews, admission application links, news bulletin boards, and portal links.", "iconName": "graduation-cap", "features": ["Admissions Portal Links", "Department & Faculty Pages", "Academic News Bulletin", "Document Download Hub"], "deliverables": ["Institutional Website Layout", "Admissions Form Setup", "Department Directory", "Parent & Student Portal Entry"]}, {"id": "portfolio-websites", "title": "Portfolio Websites", "category": "design", "shortDesc": "Showcase your personal brand, creative projects, case studies, and resume with stunning typography.", "fullDesc": "Personal portfolio websites for developers, designers, consultants, executives, and creative professionals. Built to highlight your achievements, present detailed case studies, and book high-ticket clients.", "iconName": "user-check", "features": ["Interactive Case Studies", "Resume Download Button", "Booking Calendar Integration", "Visual Project Grid"], "deliverables": ["Custom Portfolio Layout", "Social & CV Integrations", "Domain Connection", "Fast Mobile Presentation"]}, {"id": "landing-pages", "title": "High-Converting Landing Pages", "category": "marketing", "shortDesc": "Laser-focused single-page layouts built specifically for ad campaigns, product launches, and lead magnet captures.", "fullDesc": "Maximized for conversion rate optimization (CRO). Includes compelling hero copy, benefit breakdown cards, social proof badges, countdown timers, and immediate lead capture forms.", "iconName": "sparkles", "features": ["Persuasive Copywriting Structure", "A/B Test Ready Layouts", "Instant WhatsApp / Email Alerts", "Fast Sub-1s Loading Time"], "deliverables": ["Single Page Sales Funnel", "Analytics Tracking Tag", "Lead Storage Automation", "Campaign Ready Setup"]}, {"id": "seo-optimization", "title": "SEO & Google Ranking", "category": "marketing", "shortDesc": "Technical, on-page, and keyword optimization to help your business rank on the first page of Google search results.", "fullDesc": "Get found by prospective clients looking for your exact services. We optimize meta tags, site speed, schema structured data, internal linking, and local Google My Business signals.", "iconName": "search", "features": ["Keyword Competitor Analysis", "On-Page Meta & Schema Markup", "XML Sitemap & Indexing", "Google Business Profile Setup"], "deliverables": ["SEO Keyword Strategy", "Technical Audit & Fixes", "Google Search Console Connect", "30-Day Ranking Report"]}, {"id": "website-redesign", "title": "Website Redesign & Revamp", "category": "dev", "shortDesc": "Transform outdated, slow, or ugly websites into cutting-edge, mobile-first engines that drive revenue.", "fullDesc": "Is your current website embarrassment holding back sales? We preserve your existing content and domain equity while upgrading your design into a sleek, fast, ultra-modern experience.", "iconName": "refresh-cw", "features": ["Modern UI/UX Makeover", "Mobile Responsiveness Overhaul", "Speed Optimization (90+ Score)", "Copywriting Refinement"], "deliverables": ["Complete Design Revamp", "Mobile Optimization", "Zero Downtime Migration", "Post-Launch Care"]}, {"id": "website-maintenance", "title": "Website Maintenance & Security", "category": "marketing", "shortDesc": "Monthly backups, security updates, speed monitoring, content updates, and ongoing technical support.", "fullDesc": "Never worry about site crashes, broken links, malware, or outdated information. We manage hosting, domain renewals, security patches, regular updates, and content additions for you.", "iconName": "shield-check", "features": ["Automated Weekly Backups", "Malware & SSL Security Guard", "Priority Content Updates", "Speed Performance Checks"], "deliverables": ["Monthly Health Report", "Guaranteed 99.9% Uptime", "Dedicated Support Hotline", "Security Shielding"]}, {"id": "branding-identity", "title": "Branding & Logo Design", "category": "design", "shortDesc": "Custom vector logos, color systems, typography pairings, and brand identity guidelines.", "fullDesc": "A cohesive visual identity builds trust before a client reads a single word. We craft modern, memorable logos and brand guidelines that set you apart from every competitor in your market.", "iconName": "palette", "features": ["Primary & Secondary Logo Styles", "Vector Source Files (SVG/PNG/PDF)", "Color Palette & Font Pairing", "Brand Identity Guide"], "deliverables": ["Complete Logo Package", "Social Media Avatars", "Brand Guidelines Sheet", "Print-Ready Assets"]}, {"id": "graphic-design", "title": "Graphic & Marketing Design", "category": "design", "shortDesc": "Eye-catching flyers, banners, social media posts, e-books, and promotional print/digital assets.", "fullDesc": "High-impact promotional graphics for ad campaigns, social media marketing, church programs, corporate events, and product announcements. Designed to command attention immediately.", "iconName": "layers", "features": ["High-Resolution Print/Digital", "Social Media Post Bundles", "Custom Event Flyers & Banners", "Fast 24-48h Delivery Option"], "deliverables": ["Editable Vector Files", "Exported Web Formats", "Commercial Use License", "Multiple Revisions"]}]</script>
-
   </section>
 
 
@@ -663,13 +1026,29 @@
     <div class="flex items-center gap-2">
       <button id="scrollTop"
         class="p-3 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 text-white shadow-lg backdrop-blur-md transition-colors"
-        title="Scroll to Top"><i data-lucide="arrow-up" class="w-4 h-4"></i></button>
+        title="Scroll to Top"><i data-lucide="arrow-up" class="w-4 h-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up"
+            aria-hidden="true" class="lucide lucide-arrow-up w-4 h-4">
+            <path d="m5 12 7-7 7 7"></path>
+            <path d="M12 19V5"></path>
+          </svg>
+        </i></button>
       <button id="qcToggle"
         class="h-12 w-12 rounded-2xl bg-indigo-600 text-white flex items-center justify-center shadow-xl shadow-indigo-500/30 hover:scale-105 active:scale-95 transition-all relative">
-        <i data-lucide="message-square" class="w-6 h-6"></i>
+        <i data-lucide="message-square" class="w-6 h-6">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            data-lucide="message-square" aria-hidden="true" class="lucide lucide-message-square w-6 h-6">
+            <path
+              d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z">
+            </path>
+          </svg>
+        </i>
         <span class="absolute -top-1 -right-1 h-3.5 w-3.5 rounded-full bg-emerald-400 border-2 border-[#020203]"></span>
       </button>
     </div>
+
   </div>
 
   <script src="js/script.js"></script>
