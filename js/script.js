@@ -20,7 +20,12 @@
   // ---------- Mobile menu ----------
   const mt = document.getElementById("mobileToggle");
   const mm = document.getElementById("mobileMenu");
-  if (mt && mm) mt.addEventListener("click", () => mm.classList.toggle("hidden"));
+  if (mt && mm) {
+    mt.addEventListener("click", () => mm.classList.toggle("hidden"));
+    mm.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => mm.classList.add("hidden"));
+    });
+  }
 
   // ---------- Quick contact widget ----------
   const qcToggle = document.getElementById("qcToggle");
